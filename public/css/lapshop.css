@@ -80,7 +80,7 @@ li{
 .product-inner{
     background: #fff;
     text-align: center;
-    padding: 15px;
+    padding: 0;
     position: relative;
     width: 100%;
 }
@@ -100,7 +100,10 @@ li{
 .product-title{
     text-transform: none;
     margin: 0 0 5px 0;
-    height: 37px;
+    width: 100%;
+    height: unset;
+    text-align: left;
+    padding-left: 5px;
 }
 .product-title{
     color: #212121;
@@ -131,15 +134,26 @@ li{
     line-height: 1.4;
     text-rendering: optimizeSpeed;
     text-transform: uppercase;
+    text-align: left;
+    float: left;
+    position: absolute;
+    bottom: 0;
+    width: 60%;
 }
 .product-action{
     display: flex;
-    background: #f17a00;
-    padding: 1px;
+    /*background: #f17a00;*/
+    padding: 1px 1px 1px 5px;
+    /*background: unset;*/
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 .add-card{
-    background: url("../img/lap_shop/icon-cart.png") center no-repeat;
-    background-size: 32px;
+    background: url("../img/lap_shop/icon-cart-mb.png") right no-repeat;
+    width: 100%;
+    /*background-size: 32px;*/
     border: 0;
     font-size: 0;
     width: 100%;
