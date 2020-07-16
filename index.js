@@ -7,3 +7,6 @@ app.listen(PORT,function () {
 app.use(express.static("public"));
 app.set("view engine","ejs");
 const fs = require("fs");
+app.get("/khuyenmai",function(req,res){
+    res.render("nam");
+});
