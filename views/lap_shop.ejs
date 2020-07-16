@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MENU</title>
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="libs/bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/lapshop.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:300,400,500,700,600">
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <a class="logo" href="#">
+                    <img src="https://burgerking.vn/skin/frontend/bk2/default/img/logo.png">
+                </a>
+            </div>
+        </div>
+        <div class="top-nav">
+            <div class="container">
+                <ul class="top-nav-menu" id="top-nav">
+                    <div class="owl-stage-outer">
+                        <div class="owl-item active">
+                            <li class="item">
+                                <a href="#">
+                                    <img src="https://burgerking.vn/media/wysiwyg/navigation/New.png">
+                                    Món mới
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <a title="Scroll To Top" class="scrollup scrollup-custom" href="javascript:void(0);" style="display: none; position:fixed; bottom:50px; text-align:right;"><img src="https://burgerking.vn/skin/frontend/bk2/default/img/Top-icon.png"  alt="icon top"/></a>
+    <script type="text/javascript">
+        jQuery(document).scroll(function () {
+            if (jQuery(this).scrollTop() > 300) {
+                jQuery('.scrollup').fadeIn();
+            } else {
+                jQuery('.scrollup').fadeOut();
+            }
+        });
+        jQuery('.scrollup').click(function () {
+            jQuery("html, body").animate({scrollTop: 0}, 600);
+            return false;
+        });
+    </script>
+
+    <div class="MB_overlay" id="MB_overlay"></div>
+    <div class="MB_popup" id="MB_popup">
+        <div class="MB_frame">
+            <div class="MB_close">
+                <a href="#" title="Close" id="MB_close">
+                    <span>
+                        <img src="images/lap_shop/close.png">
+                    </span>
+                </a>
+            </div>
+            <div class="MB_content">
+                <div class="product-view">
+                    <form action="#" method="get" id="product_addtocart_form">
+                        <div class="row">
+                            <div class="product-image col-xs-6 col-sm-6 col-lg-6 col-md-6">
+                                <div class="product-image-inner">
+                                    <img id="product-collection-image" src="https://burgerking.vn/media/catalog/product/cache/1/small_image/316x/9df78eab33525d08d6e5fb8d27136e95/b/u/burger_phong_c_ch_m_i_3.jpg">
+                                </div>
+                            </div>
+                            <div class="product-option col-xs-6 col-sm-6 col-lg-6 col-md-6">
+                                <h2 class="section-title">BURGER BÒ NƯỚNG KHOAI TÂY LÁT</h2>
+                                <div class="product-options">
+                                    <dl class="last">
+                                        <dt>
+                                            <label>Phần ăn phụ</label>
+                                        </dt>
+                                        <dd class="last">
+                                            <div class="input-box">
+                                                <div class="checkbox-2-col">
+                                                    <label class="checkbox-style checkbox-border">
+                                                        <input type="checkbox" name="name1" value="value1">
+                                                        <span class="label">
+                                                        Phô mai
+                                                        <span class="price-notice">
+                                                            +
+                                                            <span class="price">5.000 VND</span>
+                                                        </span>
+                                                    </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="product-option-bottom">
+                                    <div class="product-note">
+                                        <label>Ghi chú:</label>
+                                        <textarea name="note" rows="1" cols="50" maxlength="150"></textarea>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <div class="title-qty">Số lượng phần ăn</div>
+                                        <div class="qty-wrapper qty-form">
+                                            <button type="button" class="qty-minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+                                            <input type="number" pattern="[0-9]" name="qty" id="qtyProd" maxlength="2" value="1" title="Số lượng" class="input-text qty">
+                                            <button type="button" class="qty-add-form" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                                        </div>
+                                    </div>
+                                    <div class="price-box">
+                                        <p class="price-as-configured">
+                                            <span class="full-product-price">
+                                                            </span></p><div id="nutritional_information"></div>
+                                        <input class="final-price" value="105.000&nbsp;VND" type="hidden">
+                                        <h3 class="product-price" id="product-price-1079">105.000 VND</h3>
+
+                                        <p></p>
+                                    </div>
+                                    <div class="add-to-cart-buttons">
+                                        <button type="button" title="Thêm vào giỏ hàng" class="btn btn-cart btn-primary"><span><span>Thêm vào giỏ hàng</span></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="main">
+        <div class="container col1-layout">
+            <div class="section-content">
+                <ul class="product-list row">
+                    <% burgers.map(function (e){ %>
+                        <li class="product-item col-md-4 col-xs-6">
+                            <div class="product-inner">
+                                <a href="#" class="product-image" id="product-image" onclick="productOption()">
+                                    <img src="<%= e.image %>">
+                                </a>
+                                <h4 class="product-title text-center">
+                                    <a href="#" onclick="productOption()"><%= e.name %></a>
+                                </h4>
+                                <div class="product-bottom">
+                                    <h3 class="product-price text-center"><%= e.price %></h3>
+                                    <div class="product-action">
+                                        <button type="button" title="Đặt mua" class="add-card btn-bundle"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    <% })%>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        $(".product-image, .product-title, .product-action").on("click", function() {
+            $(".MB_overlay, .MB_popup").addClass("active");
+        });
+        $("#MB_close").on("click",function() {
+            $(".MB_overlay, .MB_popup").removeClass("active");
+        });
+    </script>
+    <foorer class="footer">
+        <div class="container"></div>
+    </foorer>
+</body>
+</html>
