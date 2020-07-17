@@ -1,0 +1,135 @@
+ <div class="header">
+        <div class="container-fluid bg-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-sm-7 col-7" style="display: flex;justify-content: space-between;">
+                        <div class="js-toggle-menu hide">
+                            <span></span>
+                        </div>
+                        <div class="logo">
+                            <a href="home"><img src="img/toan-home/logo.png" alt="logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-sm-5 col-5" style="display: flex;justify-content: flex-end; ">
+                        <ul class="nav-bar">
+                            <li class="ext hide">
+                                <i class="fas fa-times"></i>
+                            </li>
+                            <li class="promotion">
+                                <div><a href="khuyenmai">Khuyễn Mãi</a></div>
+                            </li>
+                            <li class="menu">
+                                <div><a href="menu">Thực Đơn</a></div>
+                            </li>
+                            <li class="shop">
+                                <div><a href="shop">Cửa Hàng</a></div>
+                            </li>
+
+                        </ul>
+                        <div class="cart">
+                            <div>
+                                <span><i class="fas fa-shopping-cart"></i></span>
+                                <span>Giỏ Hàng</span>
+                                <span>0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- owl-stage- -->
+        <div class="top-nav-carousel">
+            <div class="container" id="fixcontainer">
+                <div class="owl-carousel owl-theme" id="slider-list">
+                    <div class="item"><a href="menu" class="owl-stage-item">
+                            <div><img src="img/toan-home/anh1.png" alt="Mon moi">Món Mới</div>
+                    </div></a>
+                    <div class="item"><a href="menu" class="owl-stage-item">
+                            <div><img src="img/toan-home/anh2.jpg" alt="Burger">Burger</div>
+                    </div></a>
+                    <div class="item"><a href="menu" class="owl-stage-item">
+                            <div><img src="img/toan-home/anh3.jpg" alt="Combo">Combo</div>
+                    </div></a>
+                    <div class="item"><a href="menu" class="owl-stage-item">
+                            <div><img src="img/toan-home/anh4.jpg" alt="Gà Rán">Gà Rán</div>
+                    </div></a>
+                    <div class="item"><a href="menu" class="owl-stage-item">
+                            <div><img src="img/toan-home/anh5.png" alt="Cơm Vua">Cơm Vua</div>
+                    </div></a>
+                    <div class="item"><a href="menu" class="owl-stage-item">
+                            <div><img src="img/toan-home/anh6.png" alt="Món Ăn Kèm">Món Ăn Kèm</div>
+                    </div></a>
+                    <div class="item"><a href="menu" class="owl-stage-item">
+                            <div><img src="img/toan-home/anh7.jpg" alt="Thức Uống">Thức Uống</div>
+                    </div></a>
+                </div>
+                <div class="scroll-top">
+                    <img src="img/toan-home/Top-icon.png" alt="scroll-top">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- scroll top o html header -->
+       
+    <script>
+    // nar-var cua header
+    $(".js-toggle-menu").on("click",hien)
+    function hien() {
+    $(".promotion").addClass("active");
+    $(".menu").addClass("active");
+    $(".shop").addClass("active");
+    $(".ext").removeClass("hide");
+    }
+    $(".ext").on("click",an)
+    function an() {
+    $(".promotion").removeClass("active");
+    $(".menu").removeClass("active");
+    $(".shop").removeClass("active");
+    $(".ext").addClass("hide");
+    }
+    $(window).resize(function () {
+    if ($(window).width()>=1090) {
+    if ($(".shop").hasClass("active")) {
+    $(".ext").addClass("hide");
+    }
+    }else{
+    if ($(".shop").hasClass("active")) {
+    $(".ext").removeClass("hide");
+    }
+    }
+    })
+        // thư viện carousle2-ở pullic js carousle2
+    $('#slider-list').owlCarousel({
+        margin: 10,
+        autoWidth: false,
+        items: 9,
+        loop: false,
+        autoplay: false,
+        autoplayTimeout: 5000,
+        nav: true,
+        dots: false,
+        navText: [
+            '<img src="img/toan-home/icon-arrow-left.png">',
+            '<img src="img/toan-home/icon-arrow.png">',
+        ],
+        responsive: {
+            320: {
+                items: 2
+            },
+            // breakpoint from 480 up
+            480: {
+                items: 3
+            },
+            // breakpoint from 768 up
+            768: {
+                items: 5
+            },
+            // breakpoint from 1024 up
+            1024: {
+                items: 9
+            }
+        }
+    });
+
+    </script>
