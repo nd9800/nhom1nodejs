@@ -1,12 +1,14 @@
 body {
     background: url(../img/nam/bg-new-products.png);
+    font-family: "Roboto", sans-serif;
+
 }
 .menu li{
     display: inline-block;
     padding-right:10px;
 }
 .menu li {
-    font-size: 13px;
+    font-size: 16px;
     color: #ff6600;
 }
 .menu li a{
@@ -22,17 +24,16 @@ h1 {
     margin: 0;
     margin-bottom: 0.7em;
     color: #f17a00;
-    font-family: "block-pro", "Helvetica Neue", Verdana, Arial, sans-serif;
     font-size: 28px;
     font-weight: 700;
     font-style: normal;
     line-height: 1.2;
-    text-rendering: optimizeLegibility;
     text-transform: uppercase;
 }
 .thursday-content {
     margin-top: 5%;
     line-height:2;
+    font-size:17px;
 }
 .section-title-promotion
 {
@@ -68,20 +69,22 @@ h1 {
     padding-top:10px;
 margin:5px 0;
     height:50px;
+
 }
 .product-title a {
     color:black;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 18px;
     display: block;
     font-weight: 700;
 }
 .product-title a:hover{
 color:#f17a00;
+
 }
 .product-desc {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
     color: #00000085;
     letter-spacing: .075em;

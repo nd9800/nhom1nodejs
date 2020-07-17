@@ -5,12 +5,91 @@
     <title>Khuyenmai</title>
 
     <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="js/carousel2/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="js/carousel2/css/owl.theme.default.min.css">
     <link rel="stylesheet" type="text/css" href="css/nsm.css"/>
+    <link rel="stylesheet" type="text/css" href="css/toan-home.css"/>
+    <link rel="stylesheet" type="text/css" href="fonts/fontawesome/css/all.css">
+
+
 </head>
 <body>
+<div class="header">
+    <div class="container-fluid bg-header">
+        <div class="container" id="fixcontainer">
+            <div class="row">
+                <div class="col-md-6 col-sm-7 col-7" style="display: flex;justify-content: space-between;">
+                    <div class="js-toggle-menu hide">
+                        <span></span>
+                    </div>
+                    <div class="logo">
+                        <a href="home"><img src="img/toan-home/logo.png" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-5 col-5" style="display: flex;justify-content: flex-end; ">
+                    <ul class="nav-bar">
+                        <li class="ext hide">
+                            <i class="fas fa-times"></i>
+                        </li>
+                        <li class="promotion">
+                            <div><a href="khuyen-mai" style="color:brown">Khuyến Mãi</a></div>
+                        </li>
+                        <li class="menu">
+                            <div><a href="menu">Thực Đơn</a></div>
+                        </li>
+                        <li class="shop">
+                            <div><a href="shop">Cửa Hàng</a></div>
+                        </li>
+
+                    </ul>
+                    <div class="cart">
+                        <div>
+                            <span><i class="fas fa-shopping-cart"></i></span>
+                            <span>Giỏ Hàng</span>
+                            <span>0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- owl-stage- -->
+    <div class="top-nav-carousel">
+        <div class="container">
+            <div class="owl-carousel owl-theme" id="slider-list">
+                <div class="item"><a href="menu" class="owl-stage-item">
+                        <div><img src="img/toan-home/anh1.png" alt="Mon moi">Món Mới</div>
+                    </a></div>
+                <div class="item"><a href="menu" class="owl-stage-item">
+                        <div><img src="img/toan-home/anh2.jpg" alt="Burger">Burger</div>
+                    </a></div>
+                <div class="item"><a href="menu" class="owl-stage-item">
+                        <div><img src="img/toan-home/anh3.jpg" alt="Combo">Combo</div>
+                    </a></div>
+                <div class="item"><a href="menu" class="owl-stage-item">
+                        <div><img src="img/toan-home/anh4.jpg" alt="Gà Rán">Gà Rán</div>
+                    </a></div>
+                <div class="item"><a href="menu" class="owl-stage-item">
+                        <div><img src="img/toan-home/anh5.png" alt="Cơm Vua">Cơm Vua</div>
+                    </a></div>
+                <div class="item"><a href="menu" class="owl-stage-item">
+                        <div><img src="img/toan-home/anh6.png" alt="Món Ăn Kèm">Món Ăn Kèm</div>
+                    </a></div>
+                <div class="item"><a href="menu" class="owl-stage-item">
+                        <div><img src="img/toan-home/anh7.jpg" alt="Thức Uống">Thức Uống</div>
+                    </a></div>
+            </div>
+            <div class="scroll-top">
+                <img src="img/toan-home/Top-icon.png" alt="scroll-top">
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <main class="page-main" >
 <section class="section">
-    <div class="container">
+    <div class="container" >
         <div class="content">
 <div class="row">
     <div class="col-md-6" >
@@ -20,7 +99,7 @@
 <img class = "img-responsive" src="img/nam/banner_promo_757x477_9.jpg"/>
             </a>
             <div class="caption text-center">
-            <a href="khuyen-mai/mua-1-tang-1-thu-nam" title="MUA 1 TẶNG 1 - THỨ 5 HÀNG TUẦN" >MUA 1 TẶNG 1 - THỨ 5 HÀNG TUẦN</a>
+            <a href="/khuyen-mai/mua-1-tang-1-thu-nam" title="MUA 1 TẶNG 1 - THỨ 5 HÀNG TUẦN" >MUA 1 TẶNG 1 - THỨ 5 HÀNG TUẦN</a>
             </div>
         </div>
 
@@ -32,7 +111,7 @@
 <img class = "img-responsive" src="img/nam/banner_promo-min_1.jpg"/>
             </a>
             <div class="caption text-center">
-                <a href="khuyen-mai/so-tay" title="Tặng Sổ Tay &quot;BÍ KÍP&quot;">Tặng Sổ Tay "BÍ KÍP"</a>
+                <a href="/khuyen-mai/so-tay" title="Tặng Sổ Tay &quot;BÍ KÍP&quot;">Tặng Sổ Tay "BÍ KÍP"</a>
             </div>
 
         </div>
@@ -47,7 +126,7 @@
                         <img class = "img-responsive" src="img/nam/banner-promo-min.jpg"/>
                         </a>
                         <div class="caption text-center">
-                            <a href="khuyen-mai/combo-de-khang" title="Combo Đề Kháng">Combo Đề Kháng</a>                        </div>
+                            <a href="/khuyen-mai/combo-de-khang" title="Combo Đề Kháng">Combo Đề Kháng</a>                        </div>
                     </div>
 
                 </div>
@@ -56,5 +135,77 @@
     </div>
 </section>
 </main>
+<footer>
+    <div class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-5 col-lg-5 col-12">
+                    <div class="coppyright">
+                        <div>Copyright 2015 Burger King Corporation.All Rights Reserved.</div>
+                        <div class="levinci-introduce">
+                            <a href="#" class="levinci-link">Designed by Levinci Group</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-5 col-12">
+                    <div class="footer-link">
+                        <ul class="link"><a href="#">Giới Thiệu</a></ul>
+                        <ul class="link"><a href="#">Hướng Dẫn</a></ul>
+                        <ul class="link"><a href="#">Liên Hệ</a></ul>
+                        <ul class="link"><a href="#">Giới Thiệu</a></ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-2 col-12">
+                    <div class="footer-facebook">
+                            <span>
+                                <a href="https://www.instagram.com/?hl=vi" target="_black"><img src="img/toan-home/instagram-icon.png" alt="instagram"></a>
+                            </span>
+                        <span>
+                                <a href="https://www.facebook.com/" target="_black"><img src="img/toan-home/icon-facebook.png" alt="facebook"></a>
+                            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="transition">
+        <img src="img/toan-home/Burgerking-Delivery-Desktop.png" alt="transition">
+    </div>
+
+</footer>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+    $('.scroll-top').click(function () {
+        $("html, body").animate({scrollTop: 0}, 600);
+        return false;
+    });
+    $(".js-toggle-menu").on("click",hien)
+    function hien() {
+        $(".promotion").addClass("active");
+        $(".menu").addClass("active");
+        $(".shop").addClass("active");
+        $(".ext").removeClass("hide");
+    }
+    $(".ext").on("click",an)
+    function an() {
+        $(".promotion").removeClass("active");
+        $(".menu").removeClass("active");
+        $(".shop").removeClass("active");
+        $(".ext").addClass("hide");
+    }
+    $(window).resize(function () {
+        if ($(window).width()>=1090) {
+            if ($(".shop").hasClass("active")) {
+                $(".ext").addClass("hide");
+            }
+        }else{
+            if ($(".shop").hasClass("active")) {
+                $(".ext").removeClass("hide");
+            }
+        }
+    })
+</script>
 </body>
 </html>
