@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>linh</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/fonanswer/css2/all.css">
+    <link rel="stylesheet"  type="text/css" href="css/linhburger.css">
+</head>
+<div class="header">
+    <div class="container-fluid bg-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-sm-7 col-7" style="display: flex;justify-content: space-between;">
+                    <div class="js-toggle-menu hide">
+                        <span></span>
+                    </div>
+                    <div class="logo">
+                        <a href="home"><img src="img/toan-home/logo.png" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-sm-5 col-5" style="display: flex;justify-content: flex-end; ">
+                    <ul class="nav-bar">
+                        <li class="ext hide">
+                            <i class="fas fa-times"></i>
+                        </li>
+                        <li class="promotion">
+                            <div><a href="khuyenmai">Khuyễn Mãi</a></div>
+                        </li>
+                        <li class="menu">
+                            <div><a href="menu">Thực Đơn</a></div>
+                        </li>
+                        <li class="shop">
+                            <div><a href="shop">Cửa Hàng</a></div>
+                        </li>
+
+                    </ul>
+                    <div class="cart">
+                        <div>
+                            <span><i class="fas fa-shopping-cart"></i></span>
+                            <span>Giỏ Hàng</span>
+                            <span>0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- owl-stage- -->
+    <div class="top-nav-carousel">
+        <div class="container" id="fixcontainer">
+            <div class="owl-carousel owl-theme" id="slider-list">
+                <div class="item"><a href="menu" class="owl-stage-item">
+                        <div><img src="img/toan-home/anh1.png" alt="Mon moi">Món Mới</div>
+                </div></a>
+                <div class="item"><a href="menu" class="owl-stage-item">
+                        <div><img src="img/toan-home/anh2.jpg" alt="Burger">Burger</div>
+                </div></a>
+                <div class="item"><a href="menu" class="owl-stage-item">
+                        <div><img src="img/toan-home/anh3.jpg" alt="Combo">Combo</div>
+                </div></a>
+                <div class="item"><a href="menu" class="owl-stage-item">
+                        <div><img src="img/toan-home/anh4.jpg" alt="Gà Rán">Gà Rán</div>
+                </div></a>
+                <div class="item"><a href="menu" class="owl-stage-item">
+                        <div><img src="img/toan-home/anh5.png" alt="Cơm Vua">Cơm Vua</div>
+                </div></a>
+                <div class="item"><a href="menu" class="owl-stage-item">
+                        <div><img src="img/toan-home/anh6.png" alt="Món Ăn Kèm">Món Ăn Kèm</div>
+                </div></a>
+                <div class="item"><a href="menu" class="owl-stage-item">
+                        <div><img src="img/toan-home/anh7.jpg" alt="Thức Uống">Thức Uống</div>
+                </div></a>
+            </div>
+            <div class="scroll-top">
+                <img src="img/toan-home/Top-icon.png" alt="scroll-top">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- scroll top o html header -->
+
+<script>
+    // nar-var cua header
+    $(".js-toggle-menu").on("click",hien)
+    function hien() {
+        $(".promotion").addClass("active");
+        $(".menu").addClass("active");
+        $(".shop").addClass("active");
+        $(".ext").removeClass("hide");
+    }
+    $(".ext").on("click",an)
+    function an() {
+        $(".promotion").removeClass("active");
+        $(".menu").removeClass("active");
+        $(".shop").removeClass("active");
+        $(".ext").addClass("hide");
+    }
+    $(window).resize(function () {
+        if ($(window).width()>=1090) {
+            if ($(".shop").hasClass("active")) {
+                $(".ext").addClass("hide");
+            }
+        }else{
+            if ($(".shop").hasClass("active")) {
+                $(".ext").removeClass("hide");
+            }
+        }
+    })
+    // thư viện carousle2-ở pullic js carousle2
+    $('#slider-list').owlCarousel({
+        margin: 10,
+        autoWidth: false,
+        items: 9,
+        loop: false,
+        autoplay: false,
+        autoplayTimeout: 5000,
+        nav: true,
+        dots: false,
+        navText: [
+            '<img src="img/toan-home/icon-arrow-left.png">',
+            '<img src="img/toan-home/icon-arrow.png">',
+        ],
+        responsive: {
+            320: {
+                items: 2
+            },
+            // breakpoint from 480 up
+            480: {
+                items: 3
+            },
+            // breakpoint from 768 up
+            768: {
+                items: 5
+            },
+            // breakpoint from 1024 up
+            1024: {
+                items: 9
+            }
+        }
+    });
+</script>
+<body>
+<section class="section">
+    <div class="container">
+        <div class="page-main">
+            <div class="layout1">
+                <h1>BURGER KING ở khắp mọi nơi</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="map">
+            <!--The div element for the map -->
+            <div id="map"></div>
+            <script>
+                // Initialize and add the map
+                var uluru = {lat: 21.026888,lng:105.824035}
+                var uluru1 ={ lat:21.036701 ,lng:105.851822}
+                var uluru2 = {lat: 21.028071,lng:105.823856}
+                var uluru3 ={lat:10.803220,lng:106.738799}
+                var uluru4 ={lat:10.794809,lng:106.650316}
+                var uluru5 = {lat:10.729580,lng:106.709368}
+                var coord = navigator.geolocation.getCurrentPosition(getLocation);
+                function getLocation(position) {
+                    uluru = {
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude
+                    }
+                    initMap();
+                }
+                function getLOcation(position) {
+                    uluru1 ={
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude
+                    }
+                    initMap();
+                }
+                function getLOcation(position) {
+                    uluru2 ={
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude
+                    }
+                    initMap();
+                }
+                function getLOcation(position) {
+                    uluru3 ={
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude
+                    }
+                    initMap();
+                }
+                function getLOcation(position) {
+                    uluru4 ={
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude
+                    }
+                    initMap();
+                }
+                function getLOcation(position) {
+                    uluru5 ={
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude
+                    }
+                    initMap();
+                }
+                function initMap() {
+                    // The location of Uluru
+                    // var uluru = {lat: -25.344, lng: 131.036};
+                    // The map, centered at Uluru
+                    var map = new google.maps.Map(
+                        document.getElementById('map'), {zoom: 5, center: uluru},
+                        document.getElementById('map'),{zoom: 5,center: uluru1},
+                        document.getElementById('map'), {zoom:5, center: uluru2},
+                        document.getElementById('map'), {zoom: 5, center: uluru3},
+                        document.getElementById('map'), {zoom: 5, center: uluru4},
+                        document.getElementById('map'), {zoom: 5, center: uluru5},
+
+                    );
+                    // The marker, positioned at Uluru
+                    var marker = new google.maps.Marker({position: uluru, map: map,label:"Burgerking Trung Hòa"});
+                    var marker = new google.maps.Marker({position: uluru1, map: map,label:"Burgerking hàng buồm"});
+                    var marker = new google.maps.Marker({position: uluru2, map: map,label:"Burgerking Giảng Võ"});
+                    var marker = new google.maps.Marker({position: uluru3, map: map,label:"Burgerking Thảo Điền"});
+                    var marker = new google.maps.Marker({position: uluru4, map: map,label:"Burgerking Trường Trinh"});
+                    var marker = new google.maps.Marker({position: uluru5, map: map,label:"Burgerking Phú Mỹ Hưng"});
+                }
+            </script>
+            <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaj0mHlR-keu-9hsR6d-gB0L9BclG04rk&callback=initMap">
+            </script>
+        </div>
+        <div class="list">
+            <ul id="listbox" class="listbox">
+                <li class="box1 col-md-4 col-xs-12">
+                    <button  type="submit"class="button">
+                        <div class="runway">
+                            <div class="runway-card">
+                                <h2><i class="fab fa-periscope"></i>BURGER KING THẢO ĐIỀN</h2>
+                                <label>Địa chỉ:</label>
+                                <span>11 Thảo Điền ,Khu phố 2,Phường Thảo Điền,Quận 2,Hồ Chí Minh</span>
+                                <br>
+                                <label>Điện thoại:</label>
+                                <span>02835194662</span>
+                                <br>
+                                <span>(giờ làm việc : 10:00-22:00)</span>
+                            </div></div>
+                    </button>
+                </li>
+                <li class="box1 col-md-4 col-xs-12">
+                    <button type="submit"class="button">
+                        <div class="runway">
+                            <div class="runway-card">
+                                <h2><i class="fab fa-periscope"></i>BURGER KING TRƯỜNG CHINH</h2>
+                                <label>Địa chỉ:</label>
+                                <span>138A Trường Chinh, P12, Quận Tân Bình, Hồ Chí Minh</span>
+                                <br>
+                                <label>Điện thoại:</label>
+                                <span>02839483491</span>
+                                <br>
+                                <span>(giờ làm việc : 10:00-22:00)</span>
+                            </div>
+                        </div></button>
+                </li>
+                <li class="box1 col-md-4 col-xs-12">
+                    <button  type="submit"class="button">
+                        <div class="runway">
+                            <div class="runway-card">
+                                <h2><i class="fab fa-periscope"></i>BURGER KING PHÚ MỸ HƯNG</h2>
+                                <label>Địa chỉ:</label>
+                                <span>11 Thảo Điền ,Khu phố 2,Phường Thảo Điền,Quận 2,Hồ Chí Minh</span>
+                                <br>
+                                <label>Điện thoại:</label>
+                                <span>02835194662</span>
+                                <br>
+                                <span>(giờ làm việc : 10:00-22:00)</span>
+                            </div>
+                        </div></button>
+                </li>
+                <li class="box1 col-md-4 col-xs-12">
+                    <button  type="submit"class="button">
+                        <div class="runway">
+                            <div class="runway-card">
+                                <h2><i class="fab fa-periscope"></i>BURGER KING GIẢNG VÕ</h2>
+                                <label>Địa chỉ:</label>
+                                <span>C4 Giảng Võ, Ba Đình, Hà Nội</span>
+                                <br><br>
+                                <label>Điện thoại:</label>
+                                <span>02462925419</span>
+                                <br>
+                                <span>(giờ làm việc : 10:00-22:00)</span>
+                            </div>
+                        </div></button>
+                </li>
+                <li class="box1 col-md-4 col-xs-12">
+                    <button  type="submit"class="button">
+                        <div class="runway">
+                            <div class="runway-card">
+                                <h2><i class="fab fa-periscope"></i>BURGER KING HỒ GƯƠM</h2>
+                                <label>Địa chỉ:</label>
+                                <span>3-3B Lê Thái Tổ, P. Hàng Trống, Hoàn Kiếm, Hà Nội</span>
+                                <br>
+                                <label>Điện thoại:</label>
+                                <span>02462934649</span>
+                                <br>
+                                <span>(giờ làm việc : 10:00-22:00)</span>
+                            </div>
+                        </div></button>
+                </li>
+                <li class="box1 col-md-4 col-xs-12">
+                    <button type="submit"class="button">
+                        <div class="runway">
+                            <div class="runway-card">
+                                <h2><i class="fab fa-periscope"></i>BURGER KING TRUNG HÒA</h2>
+                                <label>Địa chỉ:</label>
+                                <span>số 99 Trung Hòa, phường Yên Hòa, quận Cầu Giấy, Hà Nội</span>
+                                <br>
+                                <label>Điện thoại:</label>
+                                <span>02462925419</span>
+                                <br>
+                                <span>(giờ làm việc : 10:00-22:00)</span>
+                            </div>
+                        </div></button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-5 col-lg-5 col-12">
+                    <div class="coppyright">
+                        <div>Copyright 2015 Burger King Corporation.All Rights Reserved.</div>
+                        <div class="levinci-introduce">
+                            <a href="#" class="levinci-link">Designed by Levinci Group</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-5 col-12">
+                    <div class="footer-link">
+                        <ul class="link"><a href="#">Giới Thiệu</a></ul>
+                        <ul class="link"><a href="#">Hướng Dẫn</a></ul>
+                        <ul class="link"><a href="#">Liên Hệ</a></ul>
+                        <ul class="link"><a href="#">Giới Thiệu</a></ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-2 col-12">
+                    <div class="footer-facebook">
+                        <span>
+                            <a href="https://www.instagram.com/?hl=vi" target="_black"><img src="img/toan-home/instagram-icon.png" alt="instagram"></a>
+                        </span>
+                        <span>
+                            <a href="https://www.facebook.com/" target="_black"><img src="img/toan-home/icon-facebook.png" alt="facebook"></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="transition">
+        <img src="img/toan-home/Burgerking-Delivery-Desktop.png" alt="transition">
+    </div>
+
+</footer>
+
+<!-- 19006960 van chuyen o footer -->
+
+<script>
+    // header scroll top
+    $('.scroll-top').click(function () {
+        $("html, body").animate({scrollTop: 0}, 600);
+        return false;
+    });
+</script>
+<script type="text/javascript" src="jss/jquery.js"></script>
+<script type="text/javascript"></script>
+</body>
+</html>
