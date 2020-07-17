@@ -60,17 +60,17 @@
                     </span>
                 </a>
             </div>
-            <div class="MB_content">
+            <div class="MB_content" id="MB_content">
                 <div class="product-view">
                     <form action="#" method="get" id="product_addtocart_form">
                         <div class="row">
                             <div class="product-image col-xs-6 col-sm-6 col-lg-6 col-md-6">
-                                <div class="product-image-inner">
-                                    <img id="product-collection-image" src="https://burgerking.vn/media/catalog/product/cache/1/small_image/316x/9df78eab33525d08d6e5fb8d27136e95/b/u/burger_phong_c_ch_m_i_3.jpg">
+                                <div class="product-image-inner" id="product-image-inner">
+                                    <img id="product-collection-image" src="">
                                 </div>
                             </div>
                             <div class="product-option col-xs-6 col-sm-6 col-lg-6 col-md-6">
-                                <h2 class="section-title">BURGER BÒ NƯỚNG KHOAI TÂY LÁT</h2>
+                                <h2 class="section-title" id="TenSp"></h2>
                                 <div class="product-options">
                                     <dl class="last">
                                         <dt>
@@ -78,17 +78,7 @@
                                         </dt>
                                         <dd class="last">
                                             <div class="input-box">
-                                                <div class="checkbox-2-col">
-                                                    <label class="checkbox-style checkbox-border">
-                                                        <input type="checkbox" name="name1" value="value1">
-                                                        <span class="label">
-                                                        Phô mai
-                                                        <span class="price-notice">
-                                                            +
-                                                            <span class="price">5.000 VND</span>
-                                                        </span>
-                                                    </span>
-                                                    </label>
+                                                <div class="checkbox-2-col" id="sub-group">
                                                 </div>
                                             </div>
                                         </dd>
@@ -127,6 +117,8 @@
             </div>
         </div>
     </div>
+
+
     <section class="main">
         <div class="container col1-layout">
             <div class="section-content">
@@ -134,16 +126,16 @@
                     <% burgers.map(function (e){ %>
                         <li class="product-item col-md-4 col-xs-6">
                             <div class="product-inner">
-                                <a href="#" class="product-image" id="product-image" onclick="productOption()">
+                                <a href="#" class="product-image" id="product-image" onclick="productOption(<%= JSON.stringify(e) %>)">
                                     <img src="<%= e.image %>">
                                 </a>
                                 <h4 class="product-title text-center">
-                                    <a href="#" onclick="productOption()"><%= e.name %></a>
+                                    <a href="#" onclick="productOption(<%= JSON.stringify(e) %>)"><%= e.name %></a>
                                 </h4>
                                 <div class="product-bottom">
                                     <h3 class="product-price text-center"><%= e.price %></h3>
                                     <div class="product-action">
-                                        <button type="button" title="Đặt mua" class="add-card btn-bundle"></button>
+                                        <button type="button" title="Đặt mua" class="add-cart btn-bundle"></button>
                                     </div>
                                 </div>
                             </div>
@@ -154,13 +146,43 @@
         </div>
     </section>
     <script type="text/javascript">
-        $(".product-image, .product-title, .product-action").on("click", function() {
-            $(".MB_overlay, .MB_popup").addClass("active");
-        });
         $("#MB_close").on("click",function() {
             $(".MB_overlay, .MB_popup").removeClass("active");
         });
+
+        function productOption(e) {
+            $('#TenSp').text(e.name);
+            $('#product-image-inner img').attr('src', e.image);
+
+            var subGroup = e.sub;
+            $('#sub-group').empty();
+            subGroup.forEach(function(sub){
+                var appendStr = '<label class="checkbox-style checkbox-border">\n'+
+                    '<input type="checkbox" name="name1" value="value1">\n'+
+                        '<span class="label">\n'+
+                        sub.name +
+                        '<span class="price-notice">\n'+
+                        '<span class="price">\n'+
+                        sub.price +
+                        '</span>\n'+
+                        '</span>'+
+                        '</label>';
+                $('#sub-group').append(appendStr);
+            });
+            $(".MB_overlay, .MB_popup").addClass("active");
+        }
     </script>
+
+    <script type="text/javascript">
+        $.ajax({
+            url: "/api/product",
+            method: "GET",
+            success:function(data){
+                console.log(data);
+            }
+        })
+    </script>
+
     <foorer class="footer">
         <div class="container"></div>
     </foorer>

@@ -28,7 +28,7 @@
         "price": "23.000 vnd"
       },
       {
-        "name": "Thịt xông khói",
+        "name": "Thịt xông khói 2",
         "price": "15.000 vnd"
       },{
         "name": "Phô mai mỹ",
@@ -43,14 +43,14 @@
     "price": "47.000 VND",
     "sub": [
       {
-        "name": "Miếng Bò Whopper Nhỏ",
+        "name": "Miếng Bò Whopper Nhỏ 3",
         "price": "23.000 vnd"
       },
       {
-        "name": "Thịt xông khói",
+        "name": "Thịt xông khói 3",
         "price": "15.000 vnd"
       },{
-        "name": "Phô mai mỹ",
+        "name": "Phô mai mỹ 3",
         "price": "5.000 vnd"
       }
     ],
