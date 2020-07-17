@@ -26,3 +26,6 @@ app.get("/menu", function(req,res) {
         product: product
     });
 });
+app.get("/home",function(req,res){
+    res.render("toan-home");
+});
