@@ -29,3 +29,15 @@ app.get("/menu", function(req,res) {
 app.get("/home",function(req,res){
     res.render("toan-home");
 });
+app.get("/khuyen-mai",function(req,res){
+    res.render("khuyen-mai");
+});
+app.get("/khuyen-mai/mua-1-tang-1-thu-nam",function(req,res){
+    res.render("mua-1-tang-1-thu-nam");
+});
+app.get("/khuyen-mai/combo-de-khang",function(req,res){
+    res.render("combo-de-khang");
+});
+app.get("/khuyen-mai/so-tay",function(req,res){
+    res.render("so-tay");
+});
