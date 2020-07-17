@@ -80,7 +80,7 @@ li{
 .product-inner{
     background: #fff;
     text-align: center;
-    padding: 0;
+    padding: 15px;
     position: relative;
     width: 100%;
 }
@@ -100,10 +100,7 @@ li{
 .product-title{
     text-transform: none;
     margin: 0 0 5px 0;
-    width: 100%;
-    height: unset;
-    text-align: left;
-    padding-left: 5px;
+    height: 37px;
 }
 .product-title{
     color: #212121;
@@ -134,26 +131,15 @@ li{
     line-height: 1.4;
     text-rendering: optimizeSpeed;
     text-transform: uppercase;
-    text-align: left;
-    float: left;
-    position: absolute;
-    bottom: 0;
-    width: 60%;
 }
 .product-action{
     display: flex;
-    /*background: #f17a00;*/
-    padding: 1px 1px 1px 5px;
-    /*background: unset;*/
-    width: 40%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    background: #f17a00;
+    padding: 1px;
 }
-.add-card{
-    background: url("../img/lap_shop/icon-cart-mb.png") right no-repeat;
-    width: 100%;
-    /*background-size: 32px;*/
+.add-cart{
+    background: url("../img/lap_shop/icon-cart.png") center no-repeat;
+    background-size: 32px;
     border: 0;
     font-size: 0;
     width: 100%;
@@ -198,7 +184,7 @@ li{
     max-height: 90%;
     border-radius: 10px;
     margin-top: 5%;
-    max-width: 960px !important;
+    max-width: 950px !important;
     left: calc(50% - 480px) !important;
 }
 .MB_popup.active{
@@ -291,6 +277,7 @@ dd{
     margin-bottom: -5px;
 }
 .checkbox-style {
+    width: 100%;
     display: block;
     cursor: pointer;
 }
@@ -462,4 +449,85 @@ input[type=number].qty, input[type=number].qty {
     bottom: 115px !important;
     right: 20px;
     z-index: 9999;
+}
+@media screen and (max-width: 767px) {
+    li.product-item {
+        width: 50%;
+        float: left;
+        margin-bottom: 30px;
+    }
+    .product-image {
+        width: 100%;
+        float: left;
+        margin-bottom: 10px !important;
+    }
+    .product-image img {
+        border-radius: 10px 10px 0 0;
+    }
+    .product-inner {
+        padding: 0 !important;
+        border-radius: 10px 10px 0 0;
+    }
+    .product-title {
+        width: 100%;
+        height: unset;
+        text-align: left;
+        padding-left: 5px;
+    }
+    .product-bottom {
+        margin-top: 50px;
+    }
+    .product-bottom {
+        bottom: 40px;
+        padding: 0 5px;
+    }
+    .product-action {
+        background: unset;
+        width: 40%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding-right: 5px;
+    }
+    button.add-cart {
+        background: url("../img/lap_shop/icon-cart-mb.png") right no-repeat;
+        width: 100%;
+        border: none;
+    }
+    .product-price {
+        color: #c31c1c;
+        font-size: 16px;
+        float: left;
+        position: absolute;
+        bottom: 0;
+        width: 60%;
+        text-align: left;
+    }
+    .product-title {
+        width: 100%;
+        height: unset;
+        text-align: left;
+        padding-left: 5px;
+    }
+    .product-bottom {
+        margin-top: 50px;
+    }
+    .product-bottom {
+        bottom: 40px;
+        padding: 0 5px;
+    }
+    #MB_popup {
+        margin: 20% auto !important;
+        height: 80% !important;
+        width: 95% !important;
+    }
+    #product-image-inner {
+        width: 100% !important;
+    }
+    .MB_content{
+        padding: 0;
+    }
+    #MB_popup #MB_content form#product_addtocart_form {
+        padding: 0 !important;
+    }
 }

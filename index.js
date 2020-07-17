@@ -14,15 +14,13 @@ app.get("/khuyenmai",function(req,res){
 app.get("/menu", function(req,res) {
     let data = fs.readFileSync("data/sanphamburger.json","utf-8");
     let burgers = JSON.parse(data);
-    let productId = req.params.id;
-    let product = {};
-    burgers.map(function (e) {
-        if(e.id == productId){
-            product = e;
-        };
-    })
     res.render("lap_shop",{
-        burgers: burgers,
-        product: product
+        burgers: burgers
     });
+});
+
+app.get("/api/product",function(req,res) {
+    let data = fs.readFileSync("data/sanphamburger.json","utf-8");
+    let product = JSON.parse(data);
+    res.send(product);
 });
