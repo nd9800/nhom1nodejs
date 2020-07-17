@@ -10,7 +10,7 @@
     z-index: 2;
     width: 100%;
 }
-.container{
+#fixcontainer{
     max-width: 90% !important;
 }
 .active{

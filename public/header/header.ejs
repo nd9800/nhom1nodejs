@@ -39,7 +39,7 @@
         </div>
         <!-- owl-stage- -->
         <div class="top-nav-carousel">
-            <div class="container">
+            <div class="container" id="fixcontainer">
                 <div class="owl-carousel owl-theme" id="slider-list">
                     <div class="item"><a href="menu" class="owl-stage-item">
                             <div><img src="img/toan-home/anh1.png" alt="Mon moi">Món Mới</div>
@@ -99,4 +99,37 @@
     }
     }
     })
+        // thư viện carousle2-ở pullic js carousle2
+    $('#slider-list').owlCarousel({
+        margin: 10,
+        autoWidth: false,
+        items: 9,
+        loop: false,
+        autoplay: false,
+        autoplayTimeout: 5000,
+        nav: true,
+        dots: false,
+        navText: [
+            '<img src="img/toan-home/icon-arrow-left.png">',
+            '<img src="img/toan-home/icon-arrow.png">',
+        ],
+        responsive: {
+            320: {
+                items: 2
+            },
+            // breakpoint from 480 up
+            480: {
+                items: 3
+            },
+            // breakpoint from 768 up
+            768: {
+                items: 5
+            },
+            // breakpoint from 1024 up
+            1024: {
+                items: 9
+            }
+        }
+    });
+
     </script>
