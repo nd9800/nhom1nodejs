@@ -34,6 +34,16 @@ app.get("/khuyen-mai",function(req,res){
 app.get("/shop",function (req,res) {
     res.render("linhburger");
 });
+app.get("/about-us",function(req,res){
+    res.render("hung-about-us");
+});
+app.get("/instruction",function(req,res){
+    res.render("hung-instruction");
+});
+app.get("/recruit",function(req,res){
+    res.render("hung-recruit");
+});
+
 
 
 
