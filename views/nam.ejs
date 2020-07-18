@@ -1,58 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Khuyenmai</title>
-
-    <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.css"/>
-    <link rel="stylesheet" type="text/css" href="css/nam.css"/>
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MENU</title>
+<link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="libs/bootstrap/js/bootstrap.js"></script>
+<link rel="stylesheet" type="text/css" href="fonts/fontawesome/css/all.css">
+<link rel="stylesheet" type="text/css" href="js/carousel2/css/owl.carousel.min.css">
+<link rel="stylesheet" type="text/css" href="js/carousel2/css/owl.theme.default.min.css">
+<link rel="stylesheet" type="text/css" href="css/toan-home.css">
+<link rel="stylesheet" type="text/css" href="css/lapshop.css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:300,400,500,700,600">
 <body>
-<main class="page-main" >
-<section class="section">
-    <div class="container">
-        <div class="content">
-<div class="row">
-    <div class="col-md-6">
+<!--    <header class="header">-->
+<!--        <div class="header-top">-->
+<!--            <div class="container">-->
+<!--                <a class="logo" href="#">-->
+<!--                    <img src="https://burgerking.vn/skin/frontend/bk2/default/img/logo.png">-->
+<!--                </a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="top-nav">-->
+<!--            <div class="container">-->
+<!--                <ul class="top-nav-menu" id="top-nav">-->
+<!--                    <div class="owl-stage-outer">-->
+<!--                        <div class="owl-item active">-->
+<!--                            <li class="item">-->
+<!--                                <a href="#">-->
+<!--                                    <img src="https://burgerking.vn/media/wysiwyg/navigation/New.png">-->
+<!--                                    Món mới-->
+<!--                                </a>-->
+<!--                            </li>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </header>-->
 
-        <div class="image">
-            <a href="#">
-<img class = "img-responsive" src="img/banner_promo_757x477_9.jpg"/>
-            </a>
-            <div class="caption">
-            <a href="khuyen-mai/mua-1-tang-1-thu-nam" title="MUA 1 TẶNG 1 - THỨ 5 HÀNG TUẦN" >MUA 1 TẶNG 1 - THỨ 5 HÀNG TUẦN</a>
-            </div>
-        </div>
-
-    </div>
-    <div class="col-md-6">
-
-        <div class="image">
-            <a href="#">
-<img class = "img-responsive" src="img/banner_promo-min_1.jpg"/>
-            </a>
-            <div class="caption">
-                <a href="khuyen-mai/so-tay" title="Tặng Sổ Tay &quot;BÍ KÍP&quot;">Tặng Sổ Tay "BÍ KÍP"</a>
-            </div>
-        </div>
-    </div>
-</div>
-            <div class="row" style="margin-top:40px">
-                <div class="col-md-6">
-
-                    <div class="image">
-                        <a href="#">
-                        <img class = "img-responsive" src="img/banner-promo-min.jpg"/>
-                        </a>
-                        <div class="caption">
-                            <a href="khuyen-mai/combo-de-khang" title="Combo Đề Kháng">Combo Đề Kháng</a>                        </div>
+<div class="header">
+    <div class="container-fluid bg-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-sm-7 col-7" style="display: flex;justify-content: space-between;">
+                    <div class="js-toggle-menu hide">
+                        <span></span>
                     </div>
+                    <div class="logo">
+                        <a href="home"><img src="img/toan-home/logo.png" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-sm-5 col-5" style="display: flex;justify-content: flex-end; ">
+                    <ul class="nav-bar">
+                        <li class="ext hide">
+                            <i class="fas fa-times"></i>
+                        </li>
+                        <li class="promotion">
+                            <div><a href="khuyenmai">Khuyễn Mãi</a></div>
+                        </li>
+                        <li class="menu">
+                            <div><a href="menu">Thực Đơn</a></div>
+                        </li>
+                        <li class="shop">
+                            <div><a href="shop">Cửa Hàng</a></div>
+                        </li>
 
+                    </ul>
+                    <div class="cart">
+                        <div>
+                            <span><i class="fas fa-shopping-cart"></i></span>
+                            <span>Giỏ Hàng</span>
+                            <span>0</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- owl-stage- -->
+    <div class="top-nav-carousel">
+        <div class="container" id="fixcontainer">
+            <div class="owl-carousel owl-theme" id="slider-list">
+                <div class="item"><a href="menu" class="owl-stage-item">
+                        <div><img src="img/toan-home/anh1.png" alt="Mon moi">Món Mới</div>
+                    </a>
+                </div>
+                <div class="item"><a href="menu" class="owl-stage-item">
+                        <div class="menu_active"><img src="img/toan-home/anh2.jpg" alt="Burger">Burger</div>
+                    </a>
+                </div>
+                <div class="item"><a href="menu" class="owl-stage-item">
+                        <div><img src="img/toan-home/anh3.jpg" alt="Combo">Combo</div>
+
+                    </a>
+                </div>
+                <div class="item"><a href="menu" class="owl-stage-item">
+                        <div><img src="img/toan-home/anh4.jpg" alt="Gà Rán">Gà Rán</div>
+                    </a>
+                </div>
+                <div class="item"><a href="menu" class="owl-stage-item">
+                        <div><img src="img/toan-home/anh5.png" alt="Cơm Vua">Cơm Vua</div>
+                    </a>
+                </div>
+                <div class="item"><a href="menu" class="owl-stage-item">
+                        <div><img src="img/toan-home/anh6.png" alt="Món Ăn Kèm">Món Ăn Kèm</div>
+                    </a>
+                </div>
+                <div class="item"><a href="menu" class="owl-stage-item">
+                        <div><img src="img/toan-home/anh7.jpg" alt="Thức Uống">Thức Uống</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/carousel2/js/owl.carousel.min.js"></script>
+<script>
+    // nar-var cua header
+    $(".js-toggle-menu").on("click",hien)
+    function hien() {
+        $(".promotion").addClass("active");
+        $(".menu").addClass("active");
+        $(".shop").addClass("active");
+        $(".ext").removeClass("hide");
+    }
+    $(".ext").on("click",an)
+    function an() {
+        $(".promotion").removeClass("active");
+        $(".menu").removeClass("active");
+        $(".shop").removeClass("active");
+        $(".ext").addClass("hide");
+    }
+    $(window).resize(function () {
+        if ($(window).width()>=1090) {
+            if ($(".shop").hasClass("active")) {
+                $(".ext").addClass("hide");
+            }
+        }else{
+            if ($(".shop").hasClass("active")) {
+                $(".ext").removeClass("hide");
+            }
+        }
+    })
+    // thư viện carousle2-ở pullic js carousle2
+    $('#slider-list').owlCarousel({
+        margin: 10,
+        autoWidth: false,
+        items: 9,
+        loop: false,
+        autoplay: false,
+        autoplayTimeout: 5000,
+        nav: true,
+        dots: false,
+        navText: [
+            '<img src="img/toan-home/icon-arrow-left.png">',
+            '<img src="img/toan-home/icon-arrow.png">'
+        ],
+        responsive: {
+            320: {
+                items: 2
+            },
+            // breakpoint from 480 up
+            480: {
+                items: 3
+            },
+            // breakpoint from 768 up
+            768: {
+                items: 5
+            },
+            // breakpoint from 1024 up
+            1024: {
+                items: 9
+            }
+        }
+    });
+
+</script>
+
+<a title="Scroll To Top" class="scrollup scrollup-custom" href="javascript:void(0);" style="display: none; position:fixed; bottom:50px; text-align:right;"><img src="/img/lap_shop/Top-icon.png"  alt="icon top"/></a>
+<script type="text/javascript">
+    jQuery(document).scroll(function () {
+        if (jQuery(this).scrollTop() > 300) {
+            jQuery('.scrollup').fadeIn();
+        } else {
+            jQuery('.scrollup').fadeOut();
+        }
+    });
+    jQuery('.scrollup').click(function () {
+        jQuery("html, body").animate({scrollTop: 0}, 600);
+        return false;
+    });
+</script>
+
+/* POPUP */
+<div class="MB_overlay" id="MB_overlay"></div>
+<div class="MB_popup" id="MB_popup">
+    <div class="MB_frame">
+        <div class="MB_close">
+            <a href="#" title="Close" id="MB_close">
+                    <span>
+                        <img src="img/lap_shop/close.png">
+                    </span>
+            </a>
+        </div>
+        <div class="MB_content" id="MB_content">
+            <div class="product-view">
+                <form action="#" method="get" id="product_addtocart_form">
+                    <div class="row">
+                        <div class="product-image col-xs-6 col-sm-6 col-lg-6 col-md-6">
+                            <div class="product-image-inner" id="product-image-inner">
+                                <img id="product-collection-image" src="">
+                            </div>
+                        </div>
+                        <div class="product-option col-xs-6 col-sm-6 col-lg-6 col-md-6">
+                            <h2 class="section-title" id="TenSp"></h2>
+                            <div class="product-options">
+                                <dl class="last">
+                                    <dt>
+                                        <label>Phần ăn phụ</label>
+                                    </dt>
+                                    <dd class="last">
+                                        <div class="input-box">
+                                            <div class="checkbox-2-col" id="sub-group">
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="product-option-bottom">
+                                <div class="product-note">
+                                    <label>Ghi chú:</label>
+                                    <textarea name="note" rows="1" cols="50" maxlength="150"></textarea>
+                                </div>
+                                <div class="add-to-cart">
+                                    <div class="title-qty">Số lượng phần ăn</div>
+                                    <div class="qty-wrapper qty-form">
+                                        <button type="button" class="qty-minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+                                        <input type="number" pattern="[0-9]" name="qty" id="qtyProd" maxlength="2" value="1" title="Số lượng" class="input-text qty">
+                                        <button type="button" class="qty-add-form" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                                    </div>
+                                </div>
+                                <div class="price-box">
+                                    <p class="price-as-configured">
+                                            <span class="full-product-price">
+                                                            </span></p><div id="nutritional_information"></div>
+                                    <input class="final-price" value="105.000&nbsp;VND" type="hidden">
+                                    <h3 class="product-price" id="product-price">105.000 VND</h3>
+
+                                    <p></p>
+                                </div>
+                                <div class="add-to-cart-buttons">
+                                    <button type="button" title="Thêm vào giỏ hàng" class="btn btn-cart btn-primary"><span><span>Thêm vào giỏ hàng</span></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+/* load products */
+<section class="main">
+    <div class="container col1-layout">
+        <div class="section-content">
+            <ul class="product-list row">
+                <% burgers.map(function (e){ %>
+                    <li class="product-item col-md-4 col-xs-6">
+                        <div class="product-inner">
+                            <a href="#" class="product-image" id="product-image" onclick="productOption(<%= JSON.stringify(e) %>)">
+                                <img src="<%= e.image %>">
+                            </a>
+                            <h4 class="product-title text-center">
+                                <a href="#" onclick="productOption(<%= JSON.stringify(e) %>)"><%= e.name %></a>
+                            </h4>
+                            <div class="product-bottom">
+                                <h3 class="product-price text-center"><%= e.price %></h3>
+                                <div class="product-action">
+                                    <button type="button" title="Đặt mua" class="add-cart btn-bundle"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                <% })%>
+            </ul>
+        </div>
+    </div>
 </section>
-</main>
+
+/* function popup */
+<script type="text/javascript">
+    $("#MB_close, #MB_overlay").on("click",function() {
+        $(".MB_overlay, .MB_popup").removeClass("active");
+    });
+
+    function productOption(e) {
+        $('#TenSp').text(e.name);
+        $('#product-image-inner img').attr('src', e.image);
+
+        var subGroup = e.sub;
+        $('#sub-group').empty();
+        subGroup.forEach(function(sub){
+            var appendStr = '<label class="checkbox-style checkbox-border">\n'+
+                '<input type="checkbox" name="name1" value="value1">\n'+
+                '<span class="label">\n'+
+                sub.name +
+                '<span class="price-notice">\n'+
+                '<span class="price">\n'+
+                sub.price +
+                '</span>\n'+
+                '</span>'+
+                '</span class=input_qty>\n'+
+                '<input type="number" pattern="[0-9]" name="sub_qty" id="qtySub" maxlength="2" value="1" title="Số lượng" class="input-sub">\n'+
+                '</span>\n'
+            '</span>\n'+
+            '</label>';
+            $('#sub-group').append(appendStr);
+        });
+        $(".MB_overlay, .MB_popup").addClass("active");
+    }
+</script>
+
+<script type="text/javascript">
+    $.ajax({
+        url: "/api/product",
+        method: "GET",
+        success:function(data){
+            console.log(data);
+        }
+    })
+</script>
+
+<script type="text/javascript">
+    let totalPrice = 0;
+    let mainPrice = 0;
+    let subPrice = 0;
+    mainPrice = parseInt($('#product-price').text());
+    console.log(mainPrice);
+</script>
+
+<footer>
+    <div class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-5 col-lg-5 col-12">
+                    <div class="coppyright">
+                        <div>Copyright 2015 Burger King Corporation.All Rights Reserved.</div>
+                        <div class="levinci-introduce">
+                            <a href="#" class="levinci-link">Designed by Levinci Group</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-5 col-12">
+                    <div class="footer-link">
+                        <ul class="link"><a href="#">Giới Thiệu</a></ul>
+                        <ul class="link"><a href="#">Hướng Dẫn</a></ul>
+                        <ul class="link"><a href="#">Liên Hệ</a></ul>
+                        <ul class="link"><a href="#">Giới Thiệu</a></ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-2 col-12">
+                    <div class="footer-facebook">
+                            <span>
+                                <a href="https://www.instagram.com/?hl=vi" target="_black"><img src="img/toan-home/instagram-icon.png" alt="instagram"></a>
+                            </span>
+                        <span>
+                                <a href="https://www.facebook.com/" target="_black"><img src="img/toan-home/icon-facebook.png" alt="facebook"></a>
+                            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="transition">
+        <img src="img/toan-home/Burgerking-Delivery-Desktop.png" alt="transition">
+    </div>
+
+</footer>
 </body>
 </html>

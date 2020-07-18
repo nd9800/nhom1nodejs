@@ -118,3 +118,58 @@ h3, .h3 {
     margin-top: -10px;
     font-size: 20px;
 }
+.km-box
+{
+    position:relative;
+}
+.portion ul
+{
+    margin-top:20px;
+}
+.portion li
+{
+    display:inline;
+
+
+}
+.portion button
+
+{
+    height:30px;
+    width:30px;
+    padding-bottom: 5px;
+    border:none;
+    color:white;
+    background-color:#f17a00;
+    color:white;
+}
+.addon
+{
+    position:absolute;
+    top:-1px;
+    left:20px;
+}
+.addon-price
+{
+    left:120px;
+}
+#finfo
+{
+    height:30px;
+    width:300px;
+}
+
+.portion-price
+{
+    font-size:40px;
+    color: #c31c1c;
+}
+.check-out
+{
+width:350px;
+    padding:5px;
+    font-size:25px;
+    border:none;
+    color:white;
+    background-color: #f17a00;
+}

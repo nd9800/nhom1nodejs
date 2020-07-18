@@ -84,14 +84,40 @@ app.get("/khuyen-mai",function(req,res){
     res.render("khuyen-mai");
 
 });
-
-app.get("/khuyen-mai/mua-1-tang-1-thu-nam",function(req,res){
-    res.render("mua-1-tang-1-thu-nam");
+app.get("/shop",function (req,res) {
+    res.render("linhburger");
+});
+app.get("/about-us",function(req,res){
+    res.render("hung-about-us");
+});
+app.get("/instruction",function(req,res){
+    res.render("hung-instruction");
+});
+app.get("/recruit",function(req,res){
+    res.render("hung-recruit");
+});
+app.get("/contact",function(req,res){
+    res.render("hung-contact");
 });
 
-app.get("/khuyen-mai/combo-de-khang",function(req,res){
-    res.render("combo-de-khang");
+app.get("/khuyen-mai/mua-1-tang-1-thu-nam", function(req,res) {
+    let data = fs.readFileSync("data/discountburger.json","utf-8");
+    let burgersdiscount = JSON.parse(data);
+    res.render("mua-1-tang-1-thu-nam",{
+        burgersdiscount: burgersdiscount
+    });
 });
-app.get("/khuyen-mai/so-tay",function(req,res){
-    res.render("so-tay");
+app.get("/khuyen-mai/so-tay", function(req,res) {
+    let data = fs.readFileSync("data/discountso_tay.json","utf-8");
+    let burgersdiscount = JSON.parse(data);
+    res.render("so-tay",{
+        burgersdiscount: burgersdiscount
+    });
+});
+app.get("/khuyen-mai/combo-de-khang", function(req,res) {
+    let data = fs.readFileSync("data/combo.json","utf-8");
+    let burgersdiscount = JSON.parse(data);
+    res.render("combo-de-khang",{
+        burgersdiscount: burgersdiscount
+    });
 });
