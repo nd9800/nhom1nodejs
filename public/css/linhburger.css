@@ -115,6 +115,7 @@ h2{
     margin-bottom: 100px;
 }
 .box1{
+    float: left;
     border: solid 1px lightpink;
     padding: 20px;
     list-style: none;
@@ -523,7 +524,6 @@ h2{
     margin-top: 200px;
 }
 .button{
-    float: left;
     text-align: left;
     list-style: none;
     border: whitesmoke;
