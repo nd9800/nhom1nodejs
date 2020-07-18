@@ -107,7 +107,12 @@
                 $(".ext").removeClass("hide");
             }
         }
-    })
+    });
+    // header
+    $('.scroll-top').click(function () {
+        $("html, body").animate({scrollTop: 0}, 600);
+        return false;
+    });
     // thư viện carousle2-ở pullic js carousle2
     $('#slider-list').owlCarousel({
         margin: 10,
