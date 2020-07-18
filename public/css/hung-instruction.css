@@ -1,0 +1,102 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: #212121;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.instruction-page .row {
+    background-color: #f8f7f5;
+    margin-top: 50px;
+    margin-left: 0px;
+    border-radius: 10px;
+}
+.instruction-page .row .step-btn {
+    position: absolute;
+    height: 5%;
+    font-size: 22px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #f17a00;
+    margin-left: 1%;
+    border: 0;
+    width: 6%;
+    color: white;
+    font-weight: bold;
+}
+
+.instruction-page .row .step-1-content {
+    margin-top: 30px;
+    margin-left: 9%;
+}
+.instruction-page .row .step-2-content {
+    margin-top: 30px;
+    margin-left: 9%;
+}
+.instruction-page .row .step-3-content {
+    margin-top: 30px;
+    margin-left: 9%;
+}
+.instruction-page .row .step-4-content {
+    margin-top: 30px;
+    margin-left: 9%;
+}
+.instruction-page .row .step-5-content {
+    margin-top: 30px;
+    margin-left: 9%;
+}
+.instruction-page .row .step-6-content {
+    margin-top: 30px;
+    margin-left: 9%;
+}
+.instruction-page .row .step-1-content > span {
+    text-transform: uppercase;
+}
+strong {
+    font-weight: bold;
+}
+.instruction-page .row .step-1-content .burger-url {
+    color: #0073bc;
+    font-weight: bold;
+}
+button {
+    font-family: "Roboto", sans-serif;
+    color: #212121;
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: #EF7900;
+    transition: all .4s;
+    touch-action: manipulation;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    text-rendering: auto;
+}
+.instruction-page .row .icon-custom {
+    width: 12%;
+    display: unset;
+    border: 0;
+    background-color: #ec7902;
+}
+.btn.btn-primary{
+    background-color: #EF7900;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    border: 0;
+    transition: all .2s ease-in-out;
+    padding: 5px;
+}
+.btn.btn-primary:hover{
+    background-color: #ef7900bf;
+}
+.instruction-page .last-mess {
+    padding: 1%;
+    background-color: #c21c1e;
+    width: 65%;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 25px;
+    margin-top: 3%;
+}
