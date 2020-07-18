@@ -6,6 +6,21 @@
     "old_price": "129.000 VND",
     "discount": "Combo gồm: 1 Chicken’N Crisp Burger + 1 Cheese Burger + 2 Nestea",
     "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/300x/9df78eab33525d08d6e5fb8d27136e95/2/p/2pax-min.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Combo 3 người",
+    "price": "165.000 VND",
+    "old_price": "259.000 VND",
+    "discount": "Combo gồm: 2 Whopper Jr + 1 Cheese Burger + 1 Fries M + 4pcs Chicken",
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/300x/9df78eab33525d08d6e5fb8d27136e95/3/p/3pax-min.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Combo 4 người",
+    "price": "175.000 VND",
+    "old_price": "242.000 VND",
+    "discount": "Combo gồm: 2 Whopper Jr + 2 Grill Onion Burger + 2 Fries M",
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/300x/9df78eab33525d08d6e5fb8d27136e95/4/p/4pax-min_1.jpg"
   }
-
 ]
