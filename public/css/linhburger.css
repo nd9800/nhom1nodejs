@@ -531,6 +531,9 @@ h2{
     background-color: whitesmoke;
     outline: whitesmoke;
 }
+.button:focus{
+    outline: none;
+}
 .runway-card{
     border: none;
     list-style: none;
