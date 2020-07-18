@@ -527,7 +527,7 @@ h2{
 .button{
     text-align: left;
     list-style: none;
-    border: whitesmoke;
+    border: none;
     background-color: whitesmoke;
     outline: none;
 }
