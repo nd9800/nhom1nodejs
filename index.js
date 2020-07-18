@@ -31,7 +31,9 @@ app.get("/khuyen-mai",function(req,res){
     res.render("khuyen-mai");
 
 });
-
+app.get("/shop",function (req,res) {
+    res.render("linhburger");
+});
 
 
 
