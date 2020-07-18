@@ -45,9 +45,6 @@ app.get("/recruit",function(req,res){
 });
 
 
-
-
-
 app.get("/khuyen-mai/mua-1-tang-1-thu-nam", function(req,res) {
     let data = fs.readFileSync("data/discountburger.json","utf-8");
     let burgersdiscount = JSON.parse(data);

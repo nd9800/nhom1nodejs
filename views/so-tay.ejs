@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -113,7 +114,7 @@
                     </div>
                     <div class="col-md-6">
 
-                        <img class="img-responsive" src="/img/nam/banner_promo-min_1.jpg"/>
+                        <img class="img-responsive" src="/img/nam/banner_promo-min_1.jpg" style="margin: 0 auto"/>
 
                     </div>
                 </div>
@@ -126,59 +127,55 @@
 
             <div class="row">
                 <% burgersdiscount.map(function (e){ %>
-                <div class="col-md-4">
-                    <div class="image img-cart">
-
+                    <div class="col-md-4">
+                        <div class="image img-cart">
                             <img class="img-responsive " src="<%= e.image %>"/>
-
-                        <div class="product-title text-center">
-                            <a href="/menu" >
-                                <%= e.name %>
-                            </a>
-                        </div>
-                        <p class="product-desc text-center"><%= e.discount %></p>
-                        <h3 class="product-price text-center"><%= e.price %></h3>
-                        <h3 class="product-price product-old-price text-center"><%= e.old_price %> </h3>
-
-                        <button class="btn" onclick="popup()" ><span class="glyphicon glyphicon-shopping-cart"></span></button>
-                        <div id="popup">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <img class="img-responsive " src="/img/nam/combo_exc_cheese_jr_cheesy_fries-min.jpg"/>
+                            <div class="product-title text-center">
+                                <a href="/menu" >
+                                    <%= e.name %>
+                                </a>
                             </div>
-                            <div class="col-md-6">
-                                <h2 class="section-title text-left"><%= e.name %></h2>
-                                <span class="describe"><%= e.discount %></span>
-                                <dt>
-                                    <label>Add-on</label>
-                                </dt>
-                                <input type="checkbox" id="addon" name="addon" value="">
+                            <p class="product-desc text-center"><%= e.discount %></p>
+                            <h3 class="product-price text-center"><%= e.price %></h3>
+                            <h3 class="product-price product-old-price text-center"><%= e.old_price %> </h3>
+                            <button class="btn" onclick="popup()" ><span class="glyphicon glyphicon-shopping-cart"></span></button>
+                            <div id="popup">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img class="img-responsive " src="/img/nam/combo_exc_cheese_jr_cheesy_fries-min.jpg"/>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h2 class="section-title text-left"><%= e.name %></h2>
+                                        <span class="describe"><%= e.discount %></span>
+                                        <dt>
+                                            <label>Add-on</label>
+                                        </dt>
+                                        <input type="checkbox" id="addon" name="addon" value="">
+                                    </div>
+                                </div>
                             </div>
+                            <div id="bg-fade" onclick="closePopup()">
+                            </div>
+                            <script type="text/javascript">
+                                function popup(){
+                                    document.getElementById("popup").style.opacity=1;
+                                    document.getElementById("popup").style.zIndex=10;
+                                    document.getElementById("bg-fade").style.opacity=0.5;
+                                    document.getElementById("bg-fade").style.zIndex=9;
+                                }
+                                function closePopup(){
+                                    document.getElementById("popup").style.opacity=0;
+                                    document.getElementById("popup").style.zIndex=-1;
+                                    document.getElementById("bg-fade").style.opacity=0;
+                                    document.getElementById("bg-fade").style.zIndex=-2;
+                                }
+                                window.onbeforeunload = function () {
+                                    window.scrollTo(0, 0);
+                                }
+                            </script>
                         </div>
-                        </div>
-                        <div id="bg-fade" onclick="closePopup()">
-
-                        </div>
-                        <script type="text/javascript">
-                            function popup(){
-                                document.getElementById("popup").style.opacity=1;
-                                document.getElementById("popup").style.zIndex=10;
-                                document.getElementById("bg-fade").style.opacity=0.5;
-                                document.getElementById("bg-fade").style.zIndex=9;
-                            }
-                            function closePopup(){
-                                document.getElementById("popup").style.opacity=0;
-                                document.getElementById("popup").style.zIndex=-1;
-                                document.getElementById("bg-fade").style.opacity=0;
-                                document.getElementById("bg-fade").style.zIndex=-2;
-                            }
-                            window.onbeforeunload = function () {
-                                window.scrollTo(0, 0);
-                            }
-                        </script>
                     </div>
-                </div>
-                    <% })%>
+                <% })%>
             </div>
         </div>
     </section>

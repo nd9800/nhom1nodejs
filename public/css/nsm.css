@@ -35,8 +35,17 @@ padding:20px 0;
     color: #ffb66f;
 }
 .image img:hover{
-    opacity:0.7;
+    opacity:0.6;
     transition: all .4s;
+}
+.km
+{
+    transition: transform .2s; /* Animation */
+
+}
+.km:hover
+{
+    transform: scale(1.1);
 }
 a {
     color: #f47d02;
