@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Khuyenmai</title>
+    <title>Tặng Sổ Tay "BÍ KÍP"</title>
     <link rel="stylesheet" type="text/css" href="/libs/bootstrap/css/bootstrap.css"/>
     <link rel="stylesheet" type="text/css" href="/js/carousel2/css/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="/js/carousel2/css/owl.theme.default.min.css">
@@ -127,7 +127,7 @@
 
             <div class="row">
                 <% burgersdiscount.map(function (e){ %>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-6">
                         <div class="image img-cart">
                             <img class="img-responsive " src="<%= e.image %>"/>
                             <div class="product-title text-center">
@@ -141,16 +141,48 @@
                             <button class="btn" onclick="popup()" ><span class="glyphicon glyphicon-shopping-cart"></span></button>
                             <div id="popup">
                                 <div class="row">
-                                    <div class="col-md-6">
-                                        <img class="img-responsive " src="/img/nam/combo_exc_cheese_jr_cheesy_fries-min.jpg"/>
+                                    <div class="col-md-6 col-sm-5">
+                                        <img class="img-responsive " src="/img/nam/combo_exc_cheese_jr_cheesy_fries-min.jpg" style="margin:20px auto"/>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 col-sm-5">
                                         <h2 class="section-title text-left"><%= e.name %></h2>
                                         <span class="describe"><%= e.discount %></span>
-                                        <dt>
-                                            <label>Add-on</label>
-                                        </dt>
-                                        <input type="checkbox" id="addon" name="addon" value="">
+
+                                        <form action="#">
+                                        <div class="km-box">
+
+
+                                            <dt>
+                                                <label>Ghi chú: </label>
+                                            </dt>
+
+                                                <input type="text" id="finfo" name="finfo">
+
+                                        </div>
+                                            <div class="portion">
+                                            <dt>
+                                                <label>Số lượng phần ăn </label>
+                                            </dt>
+                                                <div class="row" style="padding-top:20px">
+                                            <div class="col-sm-6">
+                                                <ul >
+                                                    <li><button > - </button></li>
+                                                    <li><button > 1 </button></li>
+                                                    <li><button > + </button></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6">
+                    <span class="portion-price ">
+                        <%= e.price %>
+                    </span>
+                                            </div>
+                                                </div>
+
+
+
+                                            </div>
+                                            <input class="check-out" type="submit" value="Thêm vào giỏ hàng"/>
+                                        </form>
                                     </div>
                                 </div>
                             </div>

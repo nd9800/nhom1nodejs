@@ -3,7 +3,6 @@ body{
 
 
 }
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i");
 @font-face { font-family: 'block-pro'; src: url("../fonts/block-pro.woff") format("woff"); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'sfudinengalt'; src: url("../fonts/sfudinengalt.woff") format("woff"); font-weight: normal; font-style: normal; }
 
@@ -81,13 +80,9 @@ a {
     color:white;
 }
 #popup
-{
-    height:400px;
-    width:900px;
-
+{   height:380px;
     background-color:white ;
     border-radius: 20px;
-
     position:fixed;
     top:calc(50% - 300px);
     left:calc(50% - 450px);

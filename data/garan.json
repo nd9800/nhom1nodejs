@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "Gà Giòn không cay (1 miếng)",
+    "price": "36.000 VND",
+    "sub": [
+      {
+        "name": "Thêm coke",
+        "price": "10.000 vnd"
+      }
+    ],
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/316x/9df78eab33525d08d6e5fb8d27136e95/c/r/crispy_6.jpg"
+  },
+  {
+    "id": 1,
+    "name": "GÀ RÁN GIÒN CAY (1 miếng)",
+    "price": "36.000 VND",
+    "sub": [
+      {
+        "name": "Thêm coke",
+        "price": "10.000 vnd"
+      }
+    ],
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/316x/9df78eab33525d08d6e5fb8d27136e95/f/l/flame_3.jpg"
+  },
+  {
+    "id": 1,
+    "name": "GÀ BBQ (1 miếng)",
+    "price": "39.000 VND",
+    "sub": [
+      {
+        "name": "Thêm coke",
+        "price": "10.000 vnd"
+      }
+    ],
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/316x/9df78eab33525d08d6e5fb8d27136e95/g/a/ga_bbq.jpg"
+  },
+  {
+    "id": 1,
+    "name": "COMBO GÀ RÁN GIÒN CAY (2 miếng)",
+    "price": "90.000 VND",
+    "sub": [
+      {
+        "name": "Thêm coke",
+        "price": "10.000 vnd"
+      }
+    ],
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/316x/9df78eab33525d08d6e5fb8d27136e95/c/o/combo-2mieng-flamin.jpg"
+  },
+  {
+    "id": 1,
+    "name": "Combo Gà Giòn không cay (2 miếng)",
+    "price": "90.000 VND",
+    "sub": [
+      {
+        "name": "Thêm coke",
+        "price": "10.000 vnd"
+      }
+    ],
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/316x/9df78eab33525d08d6e5fb8d27136e95/c/o/combo-2mieng-crispy_1.jpg"
+  },
+  {
+    "id": 1,
+    "name": "COMBO GÀ BBQ (2 miếng)",
+    "price": "99.000 VND",
+    "sub": [
+      {
+        "name": "Thêm coke",
+        "price": "10.000 vnd"
+      }
+    ],
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/316x/9df78eab33525d08d6e5fb8d27136e95/c/o/combo-2mieng-bbqwings_1.jpg"
+  },
+  {
+    "id": 1,
+    "name": "COMBO GÀ RÁN GIÒN CAY (3 MIẾNG)",
+    "price": "119.000 VND",
+    "sub": [
+      {
+        "name": "Thêm coke",
+        "price": "10.000 vnd"
+      }
+    ],
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/316x/9df78eab33525d08d6e5fb8d27136e95/c/o/combo-3mieng-flamin.jpg"
+  },
+  {
+    "id": 1,
+    "name": "COMBO GÀ BBQ (3 MIẾNG)",
+    "price": "119.000 VND",
+    "sub": [
+      {
+        "name": "Thêm coke",
+        "price": "10.000 vnd"
+      }
+    ],
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/316x/9df78eab33525d08d6e5fb8d27136e95/c/o/combo-3mieng-bbqwings.jpg"
+  },
+  {
+    "id": 1,
+    "name": "Combo Gà Giòn không cay (3 miếng)",
+    "price": "119.000 VND",
+    "sub": [
+      {
+        "name": "Thêm coke",
+        "price": "10.000 vnd"
+      }
+    ],
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/316x/9df78eab33525d08d6e5fb8d27136e95/c/o/combo-3mieng-crispy_1.jpg"
+  }
+]
