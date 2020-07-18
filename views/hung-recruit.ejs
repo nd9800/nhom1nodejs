@@ -215,10 +215,10 @@
                 </div>
                 <div class="col-xl-5 col-lg-5 col-12">
                     <div class="footer-link">
-                        <ul class="link"><a href="#">Giới Thiệu</a></ul>
-                        <ul class="link"><a href="#">Hướng Dẫn</a></ul>
-                        <ul class="link"><a href="#">Liên Hệ</a></ul>
-                        <ul class="link"><a href="#">Giới Thiệu</a></ul>
+                        <ul class="link"><a href="/about-us">Giới Thiệu</a></ul>
+                        <ul class="link"><a href="/instruction">Hướng Dẫn</a></ul>
+                        <ul class="link"><a href="/contact">Liên Hệ</a></ul>
+                        <ul class="link"><a href="/recruit">Tuyển Dụng</a></ul>
                     </div>
                 </div>
 
@@ -248,4 +248,67 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="js/jquery.js"></script>
 <script src="js/carousel2/js/owl.carousel.min.js"></script>
+<script>
+    // header
+    $('.scroll-top').click(function () {
+        $("html, body").animate({scrollTop: 0}, 600);
+        return false;
+    });
+    $(".js-toggle-menu").on("click",hien)
+    function hien() {
+        $(".promotion").addClass("active");
+        $(".menu").addClass("active");
+        $(".shop").addClass("active");
+        $(".ext").removeClass("hide");
+    }
+    $(".ext").on("click",an)
+    function an() {
+        $(".promotion").removeClass("active");
+        $(".menu").removeClass("active");
+        $(".shop").removeClass("active");
+        $(".ext").addClass("hide");
+    }
+    $(window).resize(function () {
+        if ($(window).width()>=1090) {
+            if ($(".shop").hasClass("active")) {
+                $(".ext").addClass("hide");
+            }
+        }else{
+            if ($(".shop").hasClass("active")) {
+                $(".ext").removeClass("hide");
+            }
+        }
+    })
+      $('#slider-list').owlCarousel({
+        margin: 10,
+        autoWidth: false,
+        items: 9,
+        loop: false,
+        autoplay: false,
+        autoplayTimeout: 5000,
+        nav: true,
+        dots: false,
+        navText: [
+            '<img src="img/toan-home/icon-arrow-left.png">',
+            '<img src="img/toan-home/icon-arrow.png">',
+        ],
+        responsive: {
+            320: {
+                items: 2
+            },
+            // breakpoint from 480 up
+            480: {
+                items: 3
+            },
+            // breakpoint from 768 up
+            768: {
+                items: 5
+            },
+            // breakpoint from 1024 up
+            1024: {
+                items: 9
+            }
+        }
+    });
+</script>
 </html>
