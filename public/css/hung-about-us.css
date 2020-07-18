@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1.about-us{
+    color: #c21d1b;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    border-bottom: 1px solid #c0bcb7;
+    padding-bottom: 7px;
+    margin-bottom: 24px;
+}
+h2.about-title{
+    font-size: 25px ;
+    font-family: "block-pro", "Helvetica Neue", Verdana, Arial, sans-serif;
+    font-weight: 700;
+}
+p{
+    font-family: "Roboto", sans-serif;
+
+}
+section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+body{
+    background-color: #f0ebe5;
+}
+.container{
+    background-color: #ffffff;
+}
+.header{
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+}
+#fixcontainer{
+    max-width: 90% !important;
+}
+.active{
+    display: block!important;
+}
+.hide{
+    display: none;
+}
+.bg-header{
+    background: url(../img/toan-home/bg-header-bottom.png);
+    max-height: 75px;
+
+
+}
+.logo{
+    max-width: 110px;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    margin: -15px 0 -20px;
+
+}
+.logo img{
+    width: 100%;
+}
+.top-nav-carousel{
+    background: url(../img/toan-home/BG-nav-bar-2.png);
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 0;
+}
+.nav-bar li{
+    list-style: none;
+    padding: 20px 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    transition: all .4s;
+    font-size: 16px;
+}
+.promotion div a{
+    color: white;
+    text-decoration: none;
+}
+.menu div a{
+    color: white;
+    text-decoration: none;
+}
+.shop div a{
+    color: white;
+    text-decoration: none;
+}
+.nav-bar li div a:hover{
+    color: #014c8c;
+    cursor: pointer;
+}
+.nav-bar li i:hover{
+    color: #014c8c;
+    cursor: pointer;
+}
+.cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart div{
+    background: url(../img/toan-home/bg-btn-white.png);
+    padding: 20px 20px;
+    cursor: pointer;
+}
+.cart div:hover{
+    opacity: 0.85;
+}
+.cart div{
+    color: #f17a00;
+}
+.cart div span:last-child{
+    border: 2px solid #f17a00;
+    padding:  0 5px;
+}
+.footer{
+    background: #522e1deb;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+}
+.link{
+    display: inline-block;
+    padding: 10px 20px ;
+    margin: 0 10px;
+}
+.link a{
+    text-decoration: none;
+    color: #baa699;
+
+}
+.coppyright{
+    color: #baa699;
+}
+.coppyright div:first-child{
+    padding: 10px 0 0 0;
+
+}
+.footer-facebook{
+    display: flex;
+    justify-content: flex-end;
+}
+.footer-facebook span{
+    color: #baa699;
+    padding: 5px 5px ;
+    display: inline-block;
+}
+.levinci-introduce{
+    display: block;
+    margin: 0 15px;
+}
+.levinci-link{
+    margin-left: 15px;
+    color: #baa699;
+    font-size: 10px;
+}
+.levinci-link:hover{
+    color: #baa699;
+    text-decoration: none;
+}
+.transition{
+    position: fixed;
+    bottom: 85px;
+    right: 0;
+    z-index: 2;
+}
+.transition img{
+    width: 100%;
+}
+
+
+/* thanh scroll */
+.scroll-top{
+    position: fixed;
+    bottom: 150px;
+    right: 50px;
+    cursor: pointer;
+}
+.scroll-top img{
+    width: 80%;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.scroll-top img:hover{
+    border: 1px solid #777777;
+}

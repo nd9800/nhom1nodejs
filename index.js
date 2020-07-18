@@ -1,15 +1,14 @@
 const express = require("express");
 const app = express();
+
 const PORT=process.env.PORT || 5000;
 app.listen(PORT,function () {
-    console.log("sever is running...");
+    console.log("server is running...");
 });
 app.use(express.static("public"));
 app.set("view engine","ejs");
 const fs = require("fs");
-app.get("/khuyenmai",function(req,res){
-    res.render("nam");
-});
+
 
 app.get("/menu/burger", function(req,res) {
     let data = fs.readFileSync("data/burger.json","utf-8");

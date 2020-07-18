@@ -4,12 +4,88 @@
     <meta charset="UTF-8">
     <title>Khuyenmai</title>
 
-    <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.css"/>
-    <link rel="stylesheet" type="text/css" href="css/nsm.css"/>
-    <link rel="stylesheet" type="text/css" href="css/nsm2.css"/>
-    <link rel="stylesheet" type="text/css" href="css/nsm3.css"/>
+    <link rel="stylesheet" type="text/css" href="/libs/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="/js/carousel2/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="/js/carousel2/css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/nsm.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/nsm2.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/nsm3.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/toan-home.css"/>
+    <link rel="stylesheet" type="text/css" href="/fonts/fontawesome/css/all.css">
 </head>
 <body>
+<div class="header">
+    <div class="container-fluid bg-header">
+        <div class="container" id="fixcontainer">
+            <div class="row">
+                <div class="col-md-6 col-sm-7 col-7" style="display: flex;justify-content: space-between;">
+                    <div class="js-toggle-menu hide">
+                        <span></span>
+                    </div>
+                    <div class="logo">
+                        <a href="/home"><img src="/img/toan-home/logo.png" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-5 col-5" style="display: flex;justify-content: flex-end; ">
+                    <ul class="nav-bar">
+                        <li class="ext hide">
+                            <i class="fas fa-times"></i>
+                        </li>
+                        <li class="promotion">
+                            <div><a href="/khuyen-mai" style="color:brown">Khuyến Mãi</a></div>
+                        </li>
+                        <li class="menu">
+                            <div><a href="/menu">Thực Đơn</a></div>
+                        </li>
+                        <li class="shop">
+                            <div><a href="/shop">Cửa Hàng</a></div>
+                        </li>
+
+                    </ul>
+                    <div class="cart">
+                        <div>
+                            <span><i class="fas fa-shopping-cart"></i></span>
+                            <span>Giỏ Hàng</span>
+                            <span>0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- owl-stage- -->
+    <div class="top-nav-carousel">
+        <div class="container">
+            <div class="owl-carousel owl-theme" id="slider-list">
+                <div class="item"><a href="/menu" class="owl-stage-item">
+                        <div><img src="/img/toan-home/anh1.png" alt="Mon moi">Món Mới</div>
+                    </a></div>
+                <div class="item"><a href="/menu" class="owl-stage-item">
+                        <div><img src="/img/toan-home/anh2.jpg" alt="Burger">Burger</div>
+                    </a></div>
+                <div class="item"><a href="/menu" class="owl-stage-item">
+                        <div><img src="/img/toan-home/anh3.jpg" alt="Combo">Combo</div>
+                    </a></div>
+                <div class="item"><a href="/menu" class="owl-stage-item">
+                        <div><img src="/img/toan-home/anh4.jpg" alt="Gà Rán">Gà Rán</div>
+                    </a></div>
+                <div class="item"><a href="/menu" class="owl-stage-item">
+                        <div><img src="/img/toan-home/anh5.png" alt="Cơm Vua">Cơm Vua</div>
+                    </a></div>
+                <div class="item"><a href="/menu" class="owl-stage-item">
+                        <div><img src="/img/toan-home/anh6.png" alt="Món Ăn Kèm">Món Ăn Kèm</div>
+                    </a></div>
+                <div class="item"><a href="/menu" class="owl-stage-item">
+                        <div><img src="/img/toan-home/anh7.jpg" alt="Thức Uống">Thức Uống</div>
+                    </a></div>
+            </div>
+            <div class="scroll-top">
+                <img src="/img/toan-home/Top-icon.png" alt="scroll-top">
+            </div>
+        </div>
+    </div>
+</div>
 <main class="page-main" >
     <section class="section">
         <div class="container container1">
@@ -17,18 +93,18 @@
                 <div class="row">
                     <div class="col-md-6">
                         <ul class="menu">
-                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="/home">Trang chủ</a></li>
                             <li style="color:black">/</li>
-                            <li><a href="#">Khuyến mãi</a></li>
+                            <li><a href="/khuyen-mai">Khuyến mãi</a></li>
                             <li style="color:black">/</li>
                             <li>Combo Đề Kháng</li>
                         </ul>
-                        <div class="thursday-content">
-                            <h1 class="thursday-heading" style="font-size:20px">COMBO ĐỀ KHÁNG</h1>
+                        <div class="thursday-content" >
+                            <h1 class="thursday-heading" style="font-size:23px">COMBO ĐỀ KHÁNG</h1>
 
                             <h5><strong>Giá chỉ từ 39,000 đ/người.</strong></h5>
                             <h5><strong>Điều Kiện Áp Dụng:</strong></h5>
-                        <ul>
+                        <ul style="font-size:18px">
                             <li>Áp dụng mua tại chỗ, mang về hoặc đặt giao hàng tận nơi..</li>
                             <li>Không áp dụng giảm giá với các chương trình khuyến mãi khác.</li>
                             <li>Không áp dụng cho đơn hàng “Big Order” trên 1 triệu đồng.</li>
@@ -37,7 +113,7 @@
                     </div>
                     <div class="col-md-6">
 
-                        <img class="img-responsive" src="img/nam/banner-promo-min.jpg"/>
+                        <img class="img-responsive" src="/img/nam/banner-promo-min.jpg" style="margin:0 auto"/>
 
                     </div>
                 </div>
@@ -49,51 +125,56 @@
 
 
             <div class="row">
-                <div class="col-md-4">
-                    <div class="image">
-                        <a href="#">
-                            <img class="img-responsive" src="img/nam/2pax-min.jpg"/>
-                        </a>
-                        <div class="product-title text-center">
-                            <a href="#" >
-                                Combo 2 người
-                            </a>
+                <% burgersdiscount.map(function (e){ %>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="image img-cart">
+
+                            <img class="img-responsive " src="<%= e.image %>"/>
+
+                            <div class="product-title text-center">
+                                <a href="/menu" >
+                                    <%= e.name %>
+                                </a>
+                            </div>
+                            <p class="product-desc text-center"><%= e.discount %></p>
+                            <h3 class="product-price text-center"><%= e.price %></h3>
+                            <h3 class="product-price product-old-price text-center"><%= e.old_price %> </h3>
+
+                            <button class="btn" onclick="popup()" ><span class="glyphicon glyphicon-shopping-cart"></span></button>
+                            <div id="popup">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img class="img-responsive " src="/img/nam/combo_exc_cheese_jr_cheesy_fries-min.jpg"/>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h2 class="section-title text-left">combo bò tắm phô mai</h2>
+                                        <span class="describe"> 2 Burger 2 Miếng Bò Tắm Phô Mai Jr. 1 Khoai Tắm Phô Mai Thịt Xông Khói 2 Coke</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="bg-fade" onclick="closePopup()">
+
+                            </div>
+                            <script type="text/javascript">
+                                function popup(){
+                                    document.getElementById("popup").style.opacity=1;
+                                    document.getElementById("popup").style.zIndex=10;
+                                    document.getElementById("bg-fade").style.opacity=0.5;
+                                    document.getElementById("bg-fade").style.zIndex=9;
+                                }
+                                function closePopup(){
+                                    document.getElementById("popup").style.opacity=0;
+                                    document.getElementById("popup").style.zIndex=-1;
+                                    document.getElementById("bg-fade").style.opacity=0;
+                                    document.getElementById("bg-fade").style.zIndex=-2;
+                                }
+                                window.onbeforeunload = function () {
+                                    window.scrollTo(0, 0);
+                                }
+                            </script>
                         </div>
-                        <p class="product-desc text-center">Combo gồm: 1 Chicken’N Crisp Burger + 1 Cheese Burger + 2 Nestea</p>
-                        <h3 class="product-price text-center">78.000&nbsp;VND</h3>
-                        <h3 class="product-price product-old-price text-center">129.000&nbsp;VND </h3>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="image">
-                        <a href="#">
-                            <img class="img-responsive" src="img/nam/3pax-min.jpg"/>
-                        </a>
-                        <div class="product-title text-center">
-                            <a href="#" >
-                                Combo 3 người
-                            </a>
-                        </div>
-                        <p class="product-desc text-center">Combo gồm: 2 Whopper Jr + 1 Cheese Burger + 1 Fries M + 4pcs Chicken</p>
-                        <h3 class="product-price text-center">165.000&nbsp;VND</h3>
-                        <h3 class="product-price product-old-price text-center">259.000&nbsp;VND </h3>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="image">
-                        <a href="#">
-                            <img class="img-responsive" src="img/nam/4pax-min_1.jpg"/>
-                        </a>
-                        <div class="product-title text-center">
-                            <a href="#" >
-                                Combo 4 người
-                            </a>
-                        </div>
-                        <p class="product-desc text-center">Combo gồm: 2 Whopper Jr + 2 Grill Onion Burger + 2 Fries M</p>
-                        <h3 class="product-price text-center">175.000&nbsp;VND</h3>
-                        <h3 class="product-price product-old-price text-center">242.000&nbsp;VND </h3>
-                    </div>
-                </div>
+                <% })%>
 
             </div>
 
@@ -104,5 +185,77 @@
         </div>
     </section>
 </main>
+<footer>
+    <div class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-5 col-lg-5 col-12">
+                    <div class="coppyright">
+                        <div>Copyright 2015 Burger King Corporation.All Rights Reserved.</div>
+                        <div class="levinci-introduce">
+                            <a href="#" class="levinci-link">Designed by Levinci Group</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-5 col-12">
+                    <div class="footer-link">
+                        <ul class="link"><a href="#">Giới Thiệu</a></ul>
+                        <ul class="link"><a href="#">Hướng Dẫn</a></ul>
+                        <ul class="link"><a href="#">Liên Hệ</a></ul>
+                        <ul class="link"><a href="#">Giới Thiệu</a></ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-2 col-12">
+                    <div class="footer-facebook">
+                            <span>
+                                <a href="https://www.instagram.com/?hl=vi" target="_black"><img src="/img/toan-home/instagram-icon.png" alt="instagram"></a>
+                            </span>
+                        <span>
+                                <a href="https://www.facebook.com/" target="_black"><img src="/img/toan-home/icon-facebook.png" alt="facebook"></a>
+                            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="transition">
+        <img src="/img/toan-home/Burgerking-Delivery-Desktop.png" alt="transition">
+    </div>
+
+</footer>
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript">
+    $('.scroll-top').click(function () {
+        $("html, body").animate({scrollTop: 0}, 600);
+        return false;
+    });
+    $(".js-toggle-menu").on("click",hien)
+    function hien() {
+        $(".promotion").addClass("active");
+        $(".menu").addClass("active");
+        $(".shop").addClass("active");
+        $(".ext").removeClass("hide");
+    }
+    $(".ext").on("click",an)
+    function an() {
+        $(".promotion").removeClass("active");
+        $(".menu").removeClass("active");
+        $(".shop").removeClass("active");
+        $(".ext").addClass("hide");
+    }
+    $(window).resize(function () {
+        if ($(window).width()>=1090) {
+            if ($(".shop").hasClass("active")) {
+                $(".ext").addClass("hide");
+            }
+        }else{
+            if ($(".shop").hasClass("active")) {
+                $(".ext").removeClass("hide");
+            }
+        }
+    })
+</script>
 </body>
 </html>

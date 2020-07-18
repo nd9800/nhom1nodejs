@@ -1,0 +1,72 @@
+
+[
+  {
+    "id": 1,
+    "name": "Burger gà phô mai (b1g2) + coke",
+    "price": "63.000 VND",
+    "old_price": "107.000 VND",
+    "discount": "Mua 1 Burger Gà Phô Mai + Nước -- Tặng 1 bánh tùy chọn",
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/300x/9df78eab33525d08d6e5fb8d27136e95/c/n/cnc_burger.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Burger gà nướng (b1g2) + coke",
+    "price": "83.000 VND",
+    "old_price": "147.000 VND",
+    "discount": "Mua 1 Burger Gà Nướng + Nước -- Tặng 1 bánh tùy chọn",
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/300x/9df78eab33525d08d6e5fb8d27136e95/t/e/tendergrill_2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Burger gà giòn cay (b1g2) + coke",
+    "price": "83.000 VND",
+    "old_price": "147.000 VND",
+    "discount": "Mua 1 Burger Gà Giòn Cay + Nước -- Tặng 1 bánh tùy chọn",
+
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/300x/9df78eab33525d08d6e5fb8d27136e95/t/e/tendercrisp_2.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Burger bò phô mai thịt xông khói (b1g2) + coke",
+    "price": "83.000 VND",
+    "old_price": "147.000 VND",
+    "discount": "Mua 1 Burger Bò Phô Mai Thịt Xông Khói + Nước -- Tặng 1 bánh",
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/300x/9df78eab33525d08d6e5fb8d27136e95/b/b/bbq_bacon_cheese.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Burger bò whopper jr (b1g2) + coke",
+    "price": "66.000 VND",
+    "old_price": "113.000 VND",
+    "discount": "Mua 1 Burger Bò WHOPPER Jr + Nước -- Tặng 1 bánh tùy chọn",
+
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/300x/9df78eab33525d08d6e5fb8d27136e95/w/h/whopper_jr.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Burger bò whopper (b1g2) + coke",
+    "price": "124.000 VND",
+    "old_price": "229.000 VND",
+    "discount": "Mua 1 Burger Bò WHOPPER + Nước -- Tặng 1 bánh tùy chọn",
+
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/300x/9df78eab33525d08d6e5fb8d27136e95/w/h/whopper_1_3.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Burger bò phô mai (b1g2) + coke",
+    "price": "66.000 VND",
+    "old_price": "113.000 VND",
+    "discount": "Mua 1 Burger Bò Phô Mai + Nước -- Tặng 1 bánh tùy chọn",
+
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/300x/9df78eab33525d08d6e5fb8d27136e95/c/h/cheeseburger_3.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Burger bò nướng khoai tây lát (b1g2) + coke",
+    "price": "66.000 VND",
+    "old_price": "113.000 VND",
+    "discount": "MMua 1 Burger Bò Nướng Khoai Tây Lát + Nước -- Tặng 1 bánh tùy",
+
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/300x/9df78eab33525d08d6e5fb8d27136e95/p/o/potato_chips.jpg"
+  }
+]

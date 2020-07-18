@@ -1,9 +1,17 @@
 body{
     background-color:#f0ebe5;
+
+
 }
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i");
+@font-face { font-family: 'block-pro'; src: url("../fonts/block-pro.woff") format("woff"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'sfudinengalt'; src: url("../fonts/sfudinengalt.woff") format("woff"); font-weight: normal; font-style: normal; }
+
 .page-main
 {
-    padding-top:50px;
+    margin-top:190px;
+    margin-bottom:100px;
+    font-family: "sfudinengalt", "Helvetica Neue", Verdana, Arial, sans-serif;
 }
 ul {
     list-style: none;
@@ -16,7 +24,7 @@ ul {
 
 .caption{
 padding:20px 0;
-    font-size:18px;
+    font-size:25px;
 }
 .caption a{
     text-decoration: none;
@@ -27,22 +35,34 @@ padding:20px 0;
     color: #ffb66f;
 }
 .image img:hover{
-    opacity:0.9;
+    opacity:0.6;
     transition: all .4s;
+}
+.km
+{
+    transition: transform .2s; /* Animation */
+
+}
+.km:hover
+{
+    transform: scale(1.1);
 }
 a {
     color: #f47d02;
 
-    -webkit-transition: all .4s;
-    transition: all .4s;
+
     text-decoration: none;
 }
 a {
     background-color: transparent;
-    -webkit-text-decoration-skip: objects;
+
 }
 .menu li{
     display: inline-block;
+}
+.menu a:hover{
+    color: #f47d02;
+    transition: all .4s;
 }
 .image{
     position:relative;

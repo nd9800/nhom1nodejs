@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Combo bò tắm phô mai",
+    "price": "198.000 VND",
+    "old_price": "247.000 VND",
+    "discount": "2 Burger 2 miếng bò tắm phô mai Jr. 1 Khoai tắm phô mai thịt xông khói 2 Coke",
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/300x/9df78eab33525d08d6e5fb8d27136e95/c/o/combo_exc_cheese_jr_cheesy_fries-min.jpg",
+    "addon":[
+      {
+        "name": "Thịt xông khói",
+        "price": "15.000 VND"
+      }
+
+]
+  }
+  ]
