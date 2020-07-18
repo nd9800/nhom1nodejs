@@ -67,7 +67,7 @@ app.get("/menu/thucuong", function(req,res) {
 });
 
 app.get("/api/product",function(req,res) {
-    let data = fs.readFileSync("data/burger.json","utf-8");
+    let data = fs.readFileSync("data/sanphamburger.json","utf-8");
     let product = JSON.parse(data);
     res.send(product);
 });
@@ -76,7 +76,7 @@ app.get("/home",function(req,res){
     res.render("toan-home");
 });
 
-app.get("/",function(req,res){
+app.get("",function(req,res){
     res.render("toan-home");
 });
 
