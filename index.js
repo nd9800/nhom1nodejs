@@ -27,7 +27,7 @@ app.get("/menu/monmoi", function(req,res) {
 });
 
 app.get("/menu/combo", function(req,res) {
-    let data = fs.readFileSync("data/combo.json","utf-8");
+    let data = fs.readFileSync("data/combomenu.json","utf-8");
     let combo = JSON.parse(data);
     res.render("combo",{
         combo: combo
