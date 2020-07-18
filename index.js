@@ -75,6 +75,11 @@ app.get("/api/product",function(req,res) {
 app.get("/home",function(req,res){
     res.render("toan-home");
 });
+
+app.get("",function(req,res){
+    res.render("toan-home");
+});
+
 app.get("/khuyen-mai",function(req,res){
     res.render("khuyen-mai");
 
