@@ -529,7 +529,7 @@ h2{
     list-style: none;
     border: none;
     background-color: whitesmoke;
-    outline: none;
+    outline: whitesmoke;
 }
 .runway-card{
     border: none;
