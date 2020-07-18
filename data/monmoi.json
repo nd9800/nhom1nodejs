@@ -1,0 +1,331 @@
+[
+  {
+    "id": 1,
+    "name": "Cơm Gà Nugget",
+    "price": "45.000 VND",
+    "sub": [
+      {
+        "name": "Thêm coke",
+        "price": "10.000 vnd"
+      },
+      {
+        "name": "Miếng Bò Whopper",
+        "price": "46.000 vnd"
+      },
+      {
+        "name": "Miếng Bò Whopper nhỏ",
+        "price": "23.000 vnd"
+      },
+      {
+        "name": "Phô mai mỹ",
+        "price": "5.000 vnd"
+      },{
+        "name": "Thịt xông khói",
+        "price": "15.000 vnd"
+      },
+      {
+        "name": "Miếng gà nướng",
+        "price": "40.000 vnd"
+      },
+      {
+        "name": "Miếng gà giòn cay",
+        "price": "40.000 vnd"
+      },
+      {
+        "name": "Miếng gà xay",
+        "price": "22.000 vnd"
+      },
+      {
+        "name": "Chese sauce 21g",
+        "price": "10.000 vnd"
+      },
+      {
+        "name": "Cơm",
+        "price": "5.000 vnd"
+      }
+    ],
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/316x/9df78eab33525d08d6e5fb8d27136e95/4/p/4pcs_ga_nugget_2.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Cơm Gà CNC + Nugget",
+    "price": "45.000 VND",
+    "sub": [
+      {
+        "name": "Thêm coke",
+        "price": "10.000 vnd"
+      },
+      {
+        "name": "Miếng Bò Whopper",
+        "price": "46.000 vnd"
+      },
+      {
+        "name": "Miếng Bò Whopper nhỏ",
+        "price": "23.000 vnd"
+      },
+      {
+        "name": "Phô mai mỹ",
+        "price": "5.000 vnd"
+      },{
+        "name": "Thịt xông khói",
+        "price": "15.000 vnd"
+      },
+      {
+        "name": "Miếng gà nướng",
+        "price": "40.000 vnd"
+      },
+      {
+        "name": "Miếng gà giòn cay",
+        "price": "40.000 vnd"
+      },
+      {
+        "name": "Miếng gà xay",
+        "price": "22.000 vnd"
+      },
+      {
+        "name": "Chese sauce 21g",
+        "price": "10.000 vnd"
+      },
+      {
+        "name": "Cơm",
+        "price": "5.000 vnd"
+      }
+    ],
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/316x/9df78eab33525d08d6e5fb8d27136e95/c/n/cnc_2pcs_nugget_2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Cơm Bò + Nugget",
+    "price": "45.000 VND",
+    "sub": [
+      {
+        "name": "Thêm coke",
+        "price": "10.000 vnd"
+      },
+      {
+        "name": "Miếng Bò Whopper",
+        "price": "46.000 vnd"
+      },
+      {
+        "name": "Miếng Bò Whopper nhỏ",
+        "price": "23.000 vnd"
+      },
+      {
+        "name": "Phô mai mỹ",
+        "price": "5.000 vnd"
+      },{
+        "name": "Thịt xông khói",
+        "price": "15.000 vnd"
+      },
+      {
+        "name": "Miếng gà nướng",
+        "price": "40.000 vnd"
+      },
+      {
+        "name": "Miếng gà giòn cay",
+        "price": "40.000 vnd"
+      },
+      {
+        "name": "Miếng gà xay",
+        "price": "22.000 vnd"
+      },
+      {
+        "name": "Chese sauce 21g",
+        "price": "10.000 vnd"
+      },
+      {
+        "name": "Cơm",
+        "price": "5.000 vnd"
+      }
+    ],
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/316x/9df78eab33525d08d6e5fb8d27136e95/1/p/1pc_bo_2pcs_nugget.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Cơm Cá",
+    "price": "35.000 VND",
+    "sub": [
+      {
+        "name": "Thêm coke",
+        "price": "10.000 vnd"
+      },
+      {
+        "name": "Miếng Bò Whopper",
+        "price": "46.000 vnd"
+      },
+      {
+        "name": "Miếng Bò Whopper nhỏ",
+        "price": "23.000 vnd"
+      },
+      {
+        "name": "Phô mai mỹ",
+        "price": "5.000 vnd"
+      },{
+        "name": "Thịt xông khói",
+        "price": "15.000 vnd"
+      },
+      {
+        "name": "Miếng gà nướng",
+        "price": "40.000 vnd"
+      },
+      {
+        "name": "Miếng gà giòn cay",
+        "price": "40.000 vnd"
+      },
+      {
+        "name": "Miếng gà xay",
+        "price": "22.000 vnd"
+      },
+      {
+        "name": "Chese sauce 21g",
+        "price": "10.000 vnd"
+      },
+      {
+        "name": "Cơm",
+        "price": "5.000 vnd"
+      }
+    ],
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/316x/9df78eab33525d08d6e5fb8d27136e95/f/i/fish_fillet_1.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Combo Cơm Gà Nugget + Coca ",
+    "price": "55.000 VND",
+    "sub": [
+      {
+        "name": "Thêm coke",
+        "price": "10.000 vnd"
+      },
+      {
+        "name": "Miếng Bò Whopper",
+        "price": "46.000 vnd"
+      },
+      {
+        "name": "Miếng Bò Whopper nhỏ",
+        "price": "23.000 vnd"
+      },
+      {
+        "name": "Phô mai mỹ",
+        "price": "5.000 vnd"
+      },{
+        "name": "Thịt xông khói",
+        "price": "15.000 vnd"
+      },
+      {
+        "name": "Miếng gà nướng",
+        "price": "40.000 vnd"
+      },
+      {
+        "name": "Miếng gà giòn cay",
+        "price": "40.000 vnd"
+      },
+      {
+        "name": "Miếng gà xay",
+        "price": "22.000 vnd"
+      },
+      {
+        "name": "Chese sauce 21g",
+        "price": "10.000 vnd"
+      },
+      {
+        "name": "Cơm",
+        "price": "5.000 vnd"
+      }
+    ],
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/316x/9df78eab33525d08d6e5fb8d27136e95/4/p/4pcs_ga_nugget_coke.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Combo Cơm Gà CNC + Nugget + Coca",
+    "price": "55.000 VND",
+    "sub": [
+      {
+        "name": "Thêm coke",
+        "price": "10.000 vnd"
+      },
+      {
+        "name": "Miếng Bò Whopper",
+        "price": "46.000 vnd"
+      },
+      {
+        "name": "Miếng Bò Whopper nhỏ",
+        "price": "23.000 vnd"
+      },
+      {
+        "name": "Phô mai mỹ",
+        "price": "5.000 vnd"
+      },{
+        "name": "Thịt xông khói",
+        "price": "15.000 vnd"
+      },
+      {
+        "name": "Miếng gà nướng",
+        "price": "40.000 vnd"
+      },
+      {
+        "name": "Miếng gà giòn cay",
+        "price": "40.000 vnd"
+      },
+      {
+        "name": "Miếng gà xay",
+        "price": "22.000 vnd"
+      },
+      {
+        "name": "Chese sauce 21g",
+        "price": "10.000 vnd"
+      },
+      {
+        "name": "Cơm",
+        "price": "5.000 vnd"
+      }
+    ],
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/316x/9df78eab33525d08d6e5fb8d27136e95/c/n/cnc_2pcs_nugget_coke.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Combo Cơm Bò + Nugget + Coca",
+    "price": "55.000 VND",
+    "sub": [
+      {
+        "name": "Thêm coke",
+        "price": "10.000 vnd"
+      },
+      {
+        "name": "Miếng Bò Whopper",
+        "price": "46.000 vnd"
+      },
+      {
+        "name": "Miếng Bò Whopper nhỏ",
+        "price": "23.000 vnd"
+      },
+      {
+        "name": "Phô mai mỹ",
+        "price": "5.000 vnd"
+      },{
+        "name": "Thịt xông khói",
+        "price": "15.000 vnd"
+      },
+      {
+        "name": "Miếng gà nướng",
+        "price": "40.000 vnd"
+      },
+      {
+        "name": "Miếng gà giòn cay",
+        "price": "40.000 vnd"
+      },
+      {
+        "name": "Miếng gà xay",
+        "price": "22.000 vnd"
+      },
+      {
+        "name": "Chese sauce 21g",
+        "price": "10.000 vnd"
+      },
+      {
+        "name": "Cơm",
+        "price": "5.000 vnd"
+      }
+    ],
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/316x/9df78eab33525d08d6e5fb8d27136e95/1/p/1pc_bo_2pcs_nugget_coke_2.jpg"
+  }
+]

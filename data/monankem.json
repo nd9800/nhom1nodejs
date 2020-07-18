@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "GÀ NUGGETS",
+    "price": "26.000 VND",
+    "sub": [],
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/316x/9df78eab33525d08d6e5fb8d27136e95/g/_/g_nuggets_chicken_nuggets__2.jpg"
+  },
+  {
+    "id": 2,
+    "name": "PHÔ MAI QUE",
+    "price": "25.000 VND",
+    "sub": [],
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/316x/9df78eab33525d08d6e5fb8d27136e95/p/h/ph_mai_que_cheesesticks_.jpg"
+  },
+  {
+    "id": 3,
+    "name": "KHOAI TÂY CHIÊN",
+    "price": "17.000 VND",
+    "sub": [],
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/316x/9df78eab33525d08d6e5fb8d27136e95/k/h/khoai_t_y_chi_n_fries__1.jpg"
+  },
+  {
+    "id": 4,
+    "name": "KHOAI TÂY TẮM PHÔ MAI THỊT XÔNG KHÓI",
+    "price": "45.000 VND",
+    "sub": [],
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/316x/9df78eab33525d08d6e5fb8d27136e95/c/h/cheesy_fries.jpg"
+  },
+  {
+    "id": 5,
+    "name": "KHOAI TÂY TẮM PHÔ MAI",
+    "price": "32.000 VND",
+    "sub": [],
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/316x/9df78eab33525d08d6e5fb8d27136e95/c/h/cheesy_fries_1.jpg"
+  },
+  {
+    "id": 6,
+    "name": "MIX WING",
+    "price": "75.000 VND",
+    "sub": [],
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/316x/9df78eab33525d08d6e5fb8d27136e95/m/i/mix_wing_6pcs_1_1.jpg"
+  }
+]

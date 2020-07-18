@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "name": "NƯỚC SUỐI",
+    "price": "19.000 VND",
+    "sub": [],
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/316x/9df78eab33525d08d6e5fb8d27136e95/n/_/n_c_su_i.jpg"
+  },
+  {
+    "id": 2,
+    "name": "NƯỚC CAM",
+    "price": "19.000 VND",
+    "sub": [],
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/316x/9df78eab33525d08d6e5fb8d27136e95/m/i/minutemaid.jpg"
+  },
+  {
+    "id": 3,
+    "name": "COKE LIGHT",
+    "price": "19.000 VND",
+    "sub": [],
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/316x/9df78eab33525d08d6e5fb8d27136e95/c/o/cokelight.jpg"
+  },
+  {
+    "id": 4,
+    "name": "MILO",
+    "price": "19.000 VND",
+    "sub": [],
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/316x/9df78eab33525d08d6e5fb8d27136e95/m/i/milo.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Nước xoài đào",
+    "price": "25.000 VND",
+    "sub": [],
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/316x/9df78eab33525d08d6e5fb8d27136e95/s/j/sjora_-_xo_i_o.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "TRÀ CHANH",
+    "price": "19.000 VND",
+    "sub": [],
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/316x/9df78eab33525d08d6e5fb8d27136e95/n/e/nesttea.jpg"
+  },
+  {
+    "id": 7,
+    "name": "COCA",
+    "price": "19.000 VND",
+    "sub": [],
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/316x/9df78eab33525d08d6e5fb8d27136e95/c/o/coke_bottle.jpg"
+  },
+  {
+    "id": 8,
+    "name": "FANTA",
+    "price": "19.000 VND",
+    "sub": [],
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/316x/9df78eab33525d08d6e5fb8d27136e95/f/a/fanta_bottle.jpg"
+  },
+  {
+    "id": 9,
+    "name": "SPRITE",
+    "price": "19.000 VND",
+    "sub": [],
+    "image": "https://burgerking.vn/media/catalog/product/cache/1/small_image/316x/9df78eab33525d08d6e5fb8d27136e95/s/p/sprite_bottle.jpg"
+  }
+]
