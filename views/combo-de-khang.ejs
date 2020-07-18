@@ -93,9 +93,9 @@
                 <div class="row">
                     <div class="col-md-6">
                         <ul class="menu">
-                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="/home">Trang chủ</a></li>
                             <li style="color:black">/</li>
-                            <li><a href="#">Khuyến mãi</a></li>
+                            <li><a href="/khuyen-mai">Khuyến mãi</a></li>
                             <li style="color:black">/</li>
                             <li>Combo Đề Kháng</li>
                         </ul>
@@ -125,51 +125,56 @@
 
 
             <div class="row">
-                <div class="col-md-4">
-                    <div class="image">
+                <% burgersdiscount.map(function (e){ %>
+                    <div class="col-md-4">
+                        <div class="image img-cart">
 
-                            <img class="img-responsive" src="/img/nam/2pax-min.jpg"/>
+                            <img class="img-responsive " src="<%= e.image %>"/>
 
-                        <div class="product-title text-center">
-                            <a href="#" >
-                                Combo 2 người
-                            </a>
+                            <div class="product-title text-center">
+                                <a href="/menu" >
+                                    <%= e.name %>
+                                </a>
+                            </div>
+                            <p class="product-desc text-center"><%= e.discount %></p>
+                            <h3 class="product-price text-center"><%= e.price %></h3>
+                            <h3 class="product-price product-old-price text-center"><%= e.old_price %> </h3>
+
+                            <button class="btn" onclick="popup()" ><span class="glyphicon glyphicon-shopping-cart"></span></button>
+                            <div id="popup">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img class="img-responsive " src="/img/nam/combo_exc_cheese_jr_cheesy_fries-min.jpg"/>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h2 class="section-title text-left">combo bò tắm phô mai</h2>
+                                        <span class="describe"> 2 Burger 2 Miếng Bò Tắm Phô Mai Jr. 1 Khoai Tắm Phô Mai Thịt Xông Khói 2 Coke</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="bg-fade" onclick="closePopup()">
+
+                            </div>
+                            <script type="text/javascript">
+                                function popup(){
+                                    document.getElementById("popup").style.opacity=1;
+                                    document.getElementById("popup").style.zIndex=10;
+                                    document.getElementById("bg-fade").style.opacity=0.5;
+                                    document.getElementById("bg-fade").style.zIndex=9;
+                                }
+                                function closePopup(){
+                                    document.getElementById("popup").style.opacity=0;
+                                    document.getElementById("popup").style.zIndex=-1;
+                                    document.getElementById("bg-fade").style.opacity=0;
+                                    document.getElementById("bg-fade").style.zIndex=-2;
+                                }
+                                window.onbeforeunload = function () {
+                                    window.scrollTo(0, 0);
+                                }
+                            </script>
                         </div>
-                        <p class="product-desc text-center">Combo gồm: 1 Chicken’N Crisp Burger + 1 Cheese Burger + 2 Nestea</p>
-                        <h3 class="product-price text-center">78.000&nbsp;VND</h3>
-                        <h3 class="product-price product-old-price text-center">129.000&nbsp;VND </h3>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="image">
-
-                            <img class="img-responsive" src="/img/nam/3pax-min.jpg"/>
-
-                        <div class="product-title text-center">
-                            <a href="#" >
-                                Combo 3 người
-                            </a>
-                        </div>
-                        <p class="product-desc text-center">Combo gồm: 2 Whopper Jr + 1 Cheese Burger + 1 Fries M + 4pcs Chicken</p>
-                        <h3 class="product-price text-center">165.000&nbsp;VND</h3>
-                        <h3 class="product-price product-old-price text-center">259.000&nbsp;VND </h3>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="image">
-
-                            <img class="img-responsive" src="/img/nam/4pax-min_1.jpg"/>
-
-                        <div class="product-title text-center">
-                            <a href="#" >
-                                Combo 4 người
-                            </a>
-                        </div>
-                        <p class="product-desc text-center">Combo gồm: 2 Whopper Jr + 2 Grill Onion Burger + 2 Fries M</p>
-                        <h3 class="product-price text-center">175.000&nbsp;VND</h3>
-                        <h3 class="product-price product-old-price text-center">242.000&nbsp;VND </h3>
-                    </div>
-                </div>
+                <% })%>
 
             </div>
 

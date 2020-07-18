@@ -32,13 +32,28 @@ app.get("/khuyen-mai",function(req,res){
 
 });
 
-app.get("/khuyen-mai/mua-1-tang-1-thu-nam",function(req,res){
-    res.render("mua-1-tang-1-thu-nam");
-});
 
-app.get("/khuyen-mai/combo-de-khang",function(req,res){
-    res.render("combo-de-khang");
+
+
+
+app.get("/khuyen-mai/mua-1-tang-1-thu-nam", function(req,res) {
+    let data = fs.readFileSync("data/discountburger.json","utf-8");
+    let burgersdiscount = JSON.parse(data);
+    res.render("mua-1-tang-1-thu-nam",{
+        burgersdiscount: burgersdiscount
+    });
 });
-app.get("/khuyen-mai/so-tay",function(req,res){
-    res.render("so-tay");
-}); 
+app.get("/khuyen-mai/so-tay", function(req,res) {
+    let data = fs.readFileSync("data/discountso_tay.json","utf-8");
+    let burgersdiscount = JSON.parse(data);
+    res.render("so-tay",{
+        burgersdiscount: burgersdiscount
+    });
+});
+app.get("/khuyen-mai/combo-de-khang", function(req,res) {
+    let data = fs.readFileSync("data/combo.json","utf-8");
+    let burgersdiscount = JSON.parse(data);
+    res.render("combo-de-khang",{
+        burgersdiscount: burgersdiscount
+    });
+});

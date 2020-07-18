@@ -121,143 +121,31 @@
 
             <h2 class="section-title-promotion text-center"> Đặt hàng ngay bây giờ  </h2>
 
-
-
             <div class="row">
-                <div class="col-md-4">
-                    <div class="image">
+                <% burgersdiscount.map(function (e){ %>
+                    <div class="col-md-4">
+                        <div class="image">
 
-                    <img class="img-responsive" src="/img/nam/1.jpg"/>
+                            <img class="img-responsive" src="<%= e.image %>"/>
 
-                        <div class="product-title text-center">
-                        <a href="/menu">
-                            Burger gà phô mai (b1g2) + coke
-                        </a>
+                            <div class="product-title text-center">
+                                <a href="/menu">
+                                    <%= e.name %>
+                                </a>
+                            </div>
+                            <p class="product-desc text-center"><%= e.discount %></p>
+                            <h3 class="product-price text-center"><%= e.price %></h3>
+                            <h3 class="product-price product-old-price text-center"><%= e.old_price %> </h3>
                         </div>
-                        <p class="product-desc text-center">Mua 1 Burger Gà Phô Mai + Nước -- Tặng 1 bánh tùy chọn</p>
-                        <h3 class="product-price text-center">63.000&nbsp;VND</h3>
-                        <h3 class="product-price product-old-price text-center">107.000&nbsp;VND </h3>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="image">
-
-                        <img class="img-responsive" src="/img/nam/2.jpg"/>
-
-                        <div class="product-title text-center">
-                            <a href="/menu">
-                                Burger gà nướng (b1g2) + coke
-                            </a>
-                        </div>
-                        <p class="product-desc text-center">Mua 1 Burger Gà Nướng + Nước -- Tặng 1 bánh tùy chọn</p>
-                        <h3 class="product-price text-center">83.000&nbsp;VND</h3>
-                        <h3 class="product-price product-old-price text-center">147.000&nbsp;VND </h3>
-
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="image">
-
-                        <img class="img-responsive" src="/img/nam/3.jpg"/>
-
-                        <div class="product-title text-center">
-                            <a href="/menu">
-                                Burger gà giòn cay (b1g2) + coke
-                            </a>
-                        </div>
-                        <p class="product-desc text-center">Mua 1 Burger Gà Giòn Cay + Nước -- Tặng 1 bánh tùy chọn</p>
-                        <h3 class="product-price text-center">83.000&nbsp;VND</h3>
-                        <h3 class="product-price product-old-price text-center">147.000&nbsp;VND </h3>
-
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="image">
-
-                        <img class="img-responsive" src="/img/nam/4.jpg"/>
-
-                        <div class="product-title text-center">
-                            <a href="/menu">
-                                Burger bò phô mai thịt xông khói (b1g2) + coke
-                            </a>
-                        </div>
-                        <p class="product-desc text-center">Mua 1 Burger Bò Phô Mai Thịt Xông Khói + Nước -- Tặng 1 bánh</p>
-                        <h3 class="product-price text-center">83.000&nbsp;VND</h3>
-                        <h3 class="product-price product-old-price text-center">147.000&nbsp;VND </h3>
-
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="image">
-
-                        <img class="img-responsive" src="/img/nam/5.jpg"/>
-
-                        <div class="product-title text-center">
-                            <a href="/menu">
-                                Burger bò whopper jr (b1g2) + coke
-                            </a>
-                        </div>
-                        <p class="product-desc text-center">Mua 1 Burger Bò WHOPPER Jr + Nước -- Tặng 1 bánh tùy chọn</p>
-                        <h3 class="product-price text-center">66.000&nbsp;VND</h3>
-                        <h3 class="product-price product-old-price text-center">113.000&nbsp;VND </h3>
-
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="image">
-
-                        <img class="img-responsive" src="/img/nam/6.jpg"/>
-
-                        <div class="product-title text-center">
-                            <a href="/menu">
-                                Burger bò whopper (b1g2) + coke
-                            </a>
-                        </div>
-                        <p class="product-desc text-center">Mua 1 Burger Bò WHOPPER + Nước -- Tặng 1 bánh tùy chọn</p>
-                        <h3 class="product-price text-center">124.000&nbsp;VND</h3>
-                        <h3 class="product-price product-old-price text-center">229.000&nbsp;VND </h3>
-
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="image">
-
-                        <img class="img-responsive" src="/img/nam/7.jpg"/>
-
-                        <div class="product-title text-center">
-                            <a href="/menu">
-                                Burger bò phô mai (b1g2) + coke
-                            </a>
-                        </div>
-                        <p class="product-desc text-center">Mua 1 Burger Bò Phô Mai + Nước -- Tặng 1 bánh tùy chọn</p>
-                        <h3 class="product-price text-center">66.000&nbsp;VND</h3>
-                        <h3 class="product-price product-old-price text-center">113.000&nbsp;VND </h3>
-
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="image">
-
-                        <img class="img-responsive" src="/img/nam/8.jpg"/>
-
-                        <div class="product-title text-center">
-                            <a href="/menu">
-                                Burger bò nướng khoai tây lát (b1g2) + coke
-                            </a>
-                        </div>
-                        <p class="product-desc text-center">Mua 1 Burger Bò Nướng Khoai Tây Lát + Nước -- Tặng 1 bánh tùy</p>
-                        <h3 class="product-price text-center">66.000&nbsp;VND</h3>
-                        <h3 class="product-price product-old-price text-center">113.000&nbsp;VND </h3>
-
-                    </div>
-                </div>
+                <% })%>
 
             </div>
         </div>
+
+
+            </div>
+
     </section>
 </main>
 <footer>
@@ -331,6 +219,9 @@
             }
         }
     })
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    }
 </script>
 </body>
 </html>
