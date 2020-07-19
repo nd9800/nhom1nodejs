@@ -116,6 +116,7 @@ h2{
 }
 .box1{
     float: left;
+    height: 300px;
     border: solid 1px lightpink;
     padding: 20px;
     list-style: none;
